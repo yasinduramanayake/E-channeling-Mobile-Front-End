@@ -18,12 +18,14 @@
       <br />
       <br />
       <br />
-      <div style="padding-left:80px;padding-right:80px">
-        <ion-button size="large" expand="full">Login </ion-button>
-        <br />
-        <ion-button size="large" expand="full">Register </ion-button>
-      </div>
     </ion-content>
+    <div>
+      <ion-button size="large" color="danger" expand="full">Login </ion-button>
+
+      <ion-button size="large" color="danger" expand="full"
+        >Register
+      </ion-button>
+    </div>
   </ion-page>
 </template>
 <script>
