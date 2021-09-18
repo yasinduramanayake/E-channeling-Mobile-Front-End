@@ -1,6 +1,6 @@
 <template>
   <ion-page>
-    <img class="logo" src="assets/frame.png" />
+    <img class="logo" src="assets/echannelling.png" />
   </ion-page>
 </template>
 <script>
