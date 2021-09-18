@@ -1,0 +1,7 @@
+{
+  "name": "E-channeling",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
