@@ -73,7 +73,6 @@ import {
   logOutOutline,
   logOutSharp,
 } from "ionicons/icons";
-
 import { homeOutline } from "ionicons/icons";
 import { useRouter } from "vue-router";
 export default {
@@ -86,7 +85,6 @@ export default {
     IonToolbar,
     IonTitle,
     IonButtons,
-
     IonItem,
     IonLabel,
     IonTabBar,
@@ -94,7 +92,6 @@ export default {
     IonTabs,
     IonMenuButton,
   },
-
   data() {
     return {
       menuarray: [
@@ -102,42 +99,41 @@ export default {
           Heading: "Login",
           Description: "User can login to App",
           Routing: `/login`,
-          icon_name: logInOutline,
+          iconname: logInOutline,
         },
         {
           Heading: "Private Hospitals",
           Description: "User can channel  Private Hospitals",
           Routing: "",
-          icon_name: medkitOutline,
+          iconname: medkitOutline,
         },
         {
           Heading: "Ayurvedic Hospitals",
           Description: "User can channel  Ayurvedic Hospitals",
           Routing: "",
-          icon_name: medkitOutline,
+          iconname: medkitOutline,
         },
         {
           Heading: "Vedio Consultation",
           Description: "User can channel a doctor Via online",
           Routing: "",
-          icon_name: tvOutline,
+          iconname: tvOutline,
         },
         {
           Heading: "Medic lab",
           Description: "User can Delivery drugs etc..",
           Routing: "",
-          icon_name: bagAddOutline,
+          iconname: bagAddOutline,
         },
         {
           Heading: "Logout",
           Description: "User can logout from the application",
           Routing: "",
-          icon_name: logOutOutline,
+          iconname: logOutOutline,
         },
       ],
     };
   },
-
   setup() {
     const beforeTabChange = () => {
       // do something before tab change
