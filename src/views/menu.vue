@@ -12,11 +12,8 @@
       <ion-item>
         <h1 style="padding-left:120px">Main Menu</h1>
       </ion-item>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div style="padding-top:70px">
+
+      <div>
         <ion-item
           button
           v-for="item in menuarray"
@@ -25,8 +22,14 @@
           detail=""
         >
           <ion-label>
-            <h2>{{ item.Heading }}</h2>
+            <h1>{{ item.Heading }}</h1>
+            <p>{{ item.Description }}</p>
           </ion-label>
+          <ion-icon
+            :icon="item.icon_name"
+            style="color: #808080;"
+            slot="start"
+          ></ion-icon>
         </ion-item>
       </div>
       <ion-tabs
@@ -58,6 +61,19 @@ import {
   IonItem,
   IonLabel,
 } from "@ionic/vue";
+import {
+  medkitOutline,
+  medkitSharp,
+  tvOutline,
+  tvSharp,
+  bagAddOutline,
+  bagAddSharp,
+  logInOutline,
+  logInSharp,
+  logOutOutline,
+  logOutSharp,
+} from "ionicons/icons";
+
 import { homeOutline } from "ionicons/icons";
 import { useRouter } from "vue-router";
 export default {
@@ -82,12 +98,42 @@ export default {
   data() {
     return {
       menuarray: [
-        { Heading: "Login", Routing: `/login` },
-        { Heading: "Private Hospitals", Routing: "" },
-        { Heading: "Ayurvedic Hospitals", Routing: "" },
-        { Heading: "Vedio Consultation", Routing: "" },
-        { Heading: "Medic lab", Routing: "" },
-        { Heading: "Logout", Routing: "" },
+        {
+          Heading: "Login",
+          Description: "User can login to App",
+          Routing: `/login`,
+          icon_name: logInOutline,
+        },
+        {
+          Heading: "Private Hospitals",
+          Description: "User can channel  Private Hospitals",
+          Routing: "",
+          icon_name: medkitOutline,
+        },
+        {
+          Heading: "Ayurvedic Hospitals",
+          Description: "User can channel  Ayurvedic Hospitals",
+          Routing: "",
+          icon_name: medkitOutline,
+        },
+        {
+          Heading: "Vedio Consultation",
+          Description: "User can channel a doctor Via online",
+          Routing: "",
+          icon_name: tvOutline,
+        },
+        {
+          Heading: "Medic lab",
+          Description: "User can Delivery drugs etc..",
+          Routing: "",
+          icon_name: bagAddOutline,
+        },
+        {
+          Heading: "Logout",
+          Description: "User can logout from the application",
+          Routing: "",
+          icon_name: logOutOutline,
+        },
       ],
     };
   },
@@ -105,6 +151,16 @@ export default {
       homeOutline,
       afterTabChange,
       router,
+      medkitOutline,
+      medkitSharp,
+      tvOutline,
+      tvSharp,
+      bagAddOutline,
+      bagAddSharp,
+      logInOutline,
+      logInSharp,
+      logOutOutline,
+      logOutSharp,
     };
   },
 };
