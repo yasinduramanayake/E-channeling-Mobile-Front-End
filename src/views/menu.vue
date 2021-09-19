@@ -114,13 +114,13 @@ export default {
           iconname: medkitOutline,
         },
         {
-          Heading: "Vedio Consultation",
+          Heading: "Video Consultation",
           Description: "User can channel a doctor Via online",
           Routing: "",
           iconname: tvOutline,
         },
         {
-          Heading: "Medic lab",
+          Heading: "Medical lab",
           Description: "User can Delivery drugs etc..",
           Routing: "",
           iconname: bagAddOutline,
