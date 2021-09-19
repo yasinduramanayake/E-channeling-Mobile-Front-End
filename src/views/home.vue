@@ -20,7 +20,13 @@
       <br />
     </ion-content>
     <div>
-      <ion-button size="large" color="danger" expand="full">Login </ion-button>
+      <ion-button
+        size="large"
+        color="danger"
+        @click="() => router.push('/login')"
+        expand="full"
+        >Login
+      </ion-button>
 
       <ion-button size="large" color="danger" expand="full"
         >Register
@@ -30,11 +36,18 @@
 </template>
 <script>
 import { IonPage, IonContent, IonButton } from "@ionic/vue";
+import { useRouter } from "vue-router";
 export default {
   components: {
     IonPage,
     IonContent,
     IonButton,
+  },
+  setup() {
+    const router = useRouter();
+    return {
+      router,
+    };
   },
 };
 </script>

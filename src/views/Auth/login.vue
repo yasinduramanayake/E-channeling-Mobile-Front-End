@@ -31,7 +31,11 @@
           <ion-input placeholder="Password"></ion-input>
         </ion-item>
         <br />
-        <ion-button size="large" color="danger" expand="full"
+        <ion-button
+          size="large"
+          color="danger"
+          @click="NextRoute()"
+          expand="full"
           >Login
         </ion-button>
       </div>
@@ -53,6 +57,7 @@ import {
   IonButton,
 } from "@ionic/vue";
 import login from "@/router/modules/login";
+import { useRouter } from "vue-router";
 export default {
   name: login,
   components: {
@@ -67,6 +72,17 @@ export default {
     IonInput,
     IonLabel,
     IonItem,
+  },
+  methods: {
+    NextRoute() {
+      this.$router.push("/menu");
+    },
+  },
+  setup() {
+    const router = useRouter();
+    return {
+      router,
+    };
   },
 };
 </script>

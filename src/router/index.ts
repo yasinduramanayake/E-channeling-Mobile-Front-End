@@ -4,10 +4,12 @@ import { RouteRecordRaw } from 'vue-router';
 // routes
 
 import Home from "@/router/modules/login";
+import Menu from "@/router/modules/menu";
 
 
 const routes: Array<RouteRecordRaw> = [
-...Home
+...Home,
+...Menu
 ]
 
 const router = createRouter({

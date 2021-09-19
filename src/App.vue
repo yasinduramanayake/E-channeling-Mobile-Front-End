@@ -99,7 +99,7 @@ export default defineComponent({
         mdIcon: medkitSharp,
       },
       {
-        title: "Aurvedic Hospitals",
+        title: "Ayurvedic Hospitals",
 
         iosIcon: medkitOutline,
         mdIcon: medkitSharp,
@@ -118,7 +118,7 @@ export default defineComponent({
       },
       {
         title: "Log Out",
-
+        url: "/login",
         iosIcon: logOutOutline,
         mdIcon: logOutSharp,
       },
