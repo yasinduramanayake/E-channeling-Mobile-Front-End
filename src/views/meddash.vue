@@ -64,7 +64,6 @@
 </template>
 <script>
 import { IonPage, IonContent, IonButton } from "@ionic/vue";
-import { useRouter } from "vue-router";
 export default {
   components: {
     IonPage,

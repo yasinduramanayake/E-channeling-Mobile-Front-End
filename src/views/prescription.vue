@@ -70,7 +70,6 @@ import {
   IonItem,
   IonButton,
 } from "@ionic/vue";
-import { useRouter } from "vue-router";
 export default {
   components: {
     IonPage,
