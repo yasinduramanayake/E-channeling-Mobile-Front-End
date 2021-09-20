@@ -10,7 +10,13 @@
       <br />
       <br />
       <center>
-        <img src="assets/download.png" />
+        <div>Acetaminophen 10mg<br/>
+            Adderall 5mg<br/>
+            Amitriptyline 100mg<br/>
+            Amlodipine 80 mg<br/>
+            Amoxicillin 30mg <br/>
+            <h1> Total = 2500.00</h1>
+        </div>
       </center>
       <br />
       <br />
@@ -24,18 +30,9 @@
         <ion-button
           size="large"
           color="danger"
-          @click="() => router.push('/login')"
+          @click="() => router.push()"
           expand="full"
-          >Login
-        </ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button 
-        size="large" 
-        color="danger" 
-        expand="full"
-        @click="() => router.push('/register')"
-          >Register
+          >Proceed
         </ion-button>
       </ion-col>
     </ion-row>

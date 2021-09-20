@@ -10,47 +10,41 @@
     </ion-header>
     <ion-content class="background-image" no-scroll padding>
       <ion-item>
-        <h1 style="padding-left:60px">Prescription Details</h1>
+        <h1 style="padding-left:150px">Register</h1>
       </ion-item>
 
+      <br />
+      <br />
+      <br />
       <br />
 
       <div style="padding-top:50px">
         <ion-item>
-          <ion-label position="stacked">Patient Name</ion-label>
-          <ion-input placeholder="Patient Name"></ion-input>
+          <ion-label position="stacked">E-mail</ion-label>
+          <ion-input placeholder="E-mail"></ion-input>
         </ion-item>
+        <br />
         <br />
 
         <ion-item>
-          <ion-label position="stacked">Your Area</ion-label>
-          <ion-input placeholder="Your Area"></ion-input>
+          <ion-label position="stacked">Password</ion-label>
+          <ion-input placeholder="Password"></ion-input>
         </ion-item>
         <br />
-      
-        <ion-item>
-          <ion-label position="stacked">Pharmacy Name</ion-label>
-          <ion-input placeholder="Pharmacy Name"></ion-input>
-        </ion-item>
         <br />
 
         <ion-item>
-          <ion-label position="stacked">Mobile</ion-label>
-          <ion-input placeholder="mobile"></ion-input>
-        </ion-item>
-        <br />
-        <ion-item>
-          <ion-label position="stacked">Prescription Details</ion-label>
-          <ion-input placeholder="details"></ion-input>
+          <ion-label position="stacked">Re-enter Password</ion-label>
+          <ion-input placeholder="Password"></ion-input>
         </ion-item>
         <br />
 
         <ion-button
           size="large"
           color="danger"
-          @click="NextRoute('/meddash')"
+          @click="NextRoute()"
           expand="full"
-          >Add
+          >Register
         </ion-button>
       </div>
     </ion-content>
@@ -70,8 +64,10 @@ import {
   IonItem,
   IonButton,
 } from "@ionic/vue";
+import login from "@/router/modules/login";
 import { useRouter } from "vue-router";
 export default {
+  name: login,
   components: {
     IonPage,
     IonContent,
@@ -87,12 +83,17 @@ export default {
   },
   methods: {
     NextRoute() {
-      this.$router.push("/meddash");
+      this.$router.push("/menu");
     },
+  },
+  setup() {
+    const router = useRouter();
+    return {
+      router,
+    };
   },
 };
 </script>
-
 <style scoped>
-@import "../theme/custom.css";
+@import "../../theme/custom.css";
 </style>

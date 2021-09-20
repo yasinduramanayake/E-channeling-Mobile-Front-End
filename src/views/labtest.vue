@@ -10,7 +10,7 @@
     </ion-header>
     <ion-content class="background-image" no-scroll padding>
       <ion-item>
-        <h1 style="padding-left:60px">Prescription Details</h1>
+        <h1 style="padding-left:60px">Lab Test Details</h1>
       </ion-item>
 
       <br />
@@ -29,8 +29,8 @@
         <br />
       
         <ion-item>
-          <ion-label position="stacked">Pharmacy Name</ion-label>
-          <ion-input placeholder="Pharmacy Name"></ion-input>
+          <ion-label position="stacked">Laboratory Name</ion-label>
+          <ion-input placeholder="Laboratory Name"></ion-input>
         </ion-item>
         <br />
 
@@ -40,7 +40,7 @@
         </ion-item>
         <br />
         <ion-item>
-          <ion-label position="stacked">Prescription Details</ion-label>
+          <ion-label position="stacked">Lab Test Details</ion-label>
           <ion-input placeholder="details"></ion-input>
         </ion-item>
         <br />

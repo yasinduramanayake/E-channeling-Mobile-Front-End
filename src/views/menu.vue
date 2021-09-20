@@ -34,8 +34,7 @@
       </div>
       <ion-tabs
         @ionTabsWillChange="beforeTabChange"
-        @ionTabsDidChange="afterTabChange"
-      >
+        @ionTabsDidChange="afterTabChange">
         <ion-tab-bar slot="bottom">
           <ion-tab-button tab="speakers" href="/menu">
             <ion-icon :icon="homeOutline"></ion-icon>
@@ -122,7 +121,7 @@ export default {
         {
           Heading: "Medical lab",
           Description: "User can Delivery drugs etc..",
-          Routing: "",
+          Routing: "/medlab",
           iconname: bagAddOutline,
         },
         {
@@ -161,6 +160,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-@import "../theme/custom.css";
-</style>
