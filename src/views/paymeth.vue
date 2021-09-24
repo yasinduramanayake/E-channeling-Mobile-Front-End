@@ -3,8 +3,8 @@
   <ion-content class="background-image" no-scroll padding>
   <ion-header :translucent="true">
       <ion-toolbar color="light">
-        <ion-buttons slot="start">
-          <ion-menu-button></ion-menu-button>
+      <ion-buttons slot="start">
+          <ion-back-button text="" default-href="/meddash"></ion-back-button>
         </ion-buttons>
         <ion-title>E-channeling</ion-title>
       </ion-toolbar>
@@ -15,7 +15,7 @@
       <center>
         <img src="assets/visa4.png" />
       </center>
-      <center> 
+      <center>
         <ion-button
           size="medium"
           color="danger"
@@ -38,7 +38,7 @@
           >Master
         </ion-button>
       </center>
-<br/> <br/> 
+<br/> 
       <center>
         <ion-button
           size="medium"
@@ -71,7 +71,10 @@ import {
   IonContent,
   IonHeader,
   IonToolbar,
+  IonTabBar,
   IonButton,
+  IonBackButton,
+  IonTabButton,
   IonTitle,
   IonTabs,
 
@@ -81,11 +84,15 @@ export default {
     IonPage,
     IonContent,
     IonButton,
+    IonBackButton,
+    IonTabButton,
     IonHeader,
     IonToolbar,
+    IonTabBar,
     IonTitle,
     IonTabs,
   },
+
   methods: {
     NextRoute1() {
       this.$router.push("/visa");
@@ -93,10 +100,10 @@ export default {
     NextRoute2() {
       this.$router.push("/master");
     },
-
     NextRoute3() {
-      this.$router.push("");
+      this.$router.push("/savecard");
     },
+    
   },
 
 setup() {
