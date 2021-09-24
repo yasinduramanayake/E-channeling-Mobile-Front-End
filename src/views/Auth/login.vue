@@ -34,7 +34,7 @@
         <ion-button
           size="large"
           color="danger"
-          @click="NextRoute()"
+          @click="() => router.push('/menu')"
           expand="full"
           >Login
         </ion-button>
@@ -72,11 +72,6 @@ export default {
     IonInput,
     IonLabel,
     IonItem,
-  },
-  methods: {
-    NextRoute() {
-      this.$router.push("/menu");
-    },
   },
   setup() {
     const router = useRouter();

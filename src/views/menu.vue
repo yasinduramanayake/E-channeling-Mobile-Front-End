@@ -34,7 +34,8 @@
       </div>
       <ion-tabs
         @ionTabsWillChange="beforeTabChange"
-        @ionTabsDidChange="afterTabChange">
+        @ionTabsDidChange="afterTabChange"
+      >
         <ion-tab-bar slot="bottom">
           <ion-tab-button tab="speakers" href="/menu">
             <ion-icon :icon="homeOutline"></ion-icon>
@@ -115,13 +116,13 @@ export default {
         {
           Heading: "Video Consultation",
           Description: "User can channel a doctor Via online",
-          Routing: "",
+          Routing: `/vedio`,
           iconname: tvOutline,
         },
         {
           Heading: "Medical lab",
           Description: "User can Delivery drugs etc..",
-          Routing: "/medlab",
+          Routing: `/medlab`,
           iconname: bagAddOutline,
         },
         {

@@ -5,11 +5,13 @@ import { RouteRecordRaw } from 'vue-router';
 
 import Home from "@/router/modules/login";
 import Menu from "@/router/modules/menu";
+import Vedio from "@/router/modules/vedio_consultation";
 
 
 const routes: Array<RouteRecordRaw> = [
 ...Home,
-...Menu
+...Menu,
+...Vedio
 ]
 
 const router = createRouter({
