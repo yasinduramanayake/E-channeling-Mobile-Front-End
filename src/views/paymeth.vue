@@ -19,7 +19,7 @@
         <ion-button
           size="medium"
           color="danger"
-          @click="NextRoute1()"
+          @click="NextRoute1('/visa')"
           expand="half"
           >Visa
         </ion-button>
@@ -33,7 +33,7 @@
         <ion-button
           size="medium"
           color="danger"
-          @click="NextRoute2('')"
+          @click="NextRoute2('/master')"
           expand="half"
           >Master
         </ion-button>
@@ -88,10 +88,10 @@ export default {
   },
   methods: {
     NextRoute1() {
-      this.$router.push("");
+      this.$router.push("/visa");
     },
     NextRoute2() {
-      this.$router.push("");
+      this.$router.push("/master");
     },
 
     NextRoute3() {

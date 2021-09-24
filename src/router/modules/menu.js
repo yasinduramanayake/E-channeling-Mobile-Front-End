@@ -33,4 +33,19 @@ export default [
     path: '/drug',
     component: () => import('@/views/drug.vue'),
   },
+
+  {
+    path: '/visa',
+    component: () => import('@/views/visa.vue'),
+  },
+
+  {
+    path: '/master',
+    component: () => import('@/views/master.vue'),
+  },
+
+  {
+    path: '/master',
+    component: () => import('@/views/master.vue'),
+  },
 ]

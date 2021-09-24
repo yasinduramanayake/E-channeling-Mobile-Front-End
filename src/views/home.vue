@@ -1,5 +1,6 @@
 <template>
   <ion-page>
+  <span class="border border-danger"></span>
     <ion-content class="background-image" no-scroll padding>
       <br />
       <br />
@@ -9,8 +10,10 @@
       <br />
       <br />
       <br />
+      <br />
+      <br />
       <center>
-        <img src="assets/download.png" />
+        <img src="assets/logo.png" />
       </center>
       <br />
       <br />
@@ -18,7 +21,10 @@
       <br />
       <br />
       <br />
-    </ion-content>
+      <br />
+      <br />
+      </ion-content>
+    
     <ion-row>
       <ion-col>
         <ion-button
@@ -39,6 +45,7 @@
         </ion-button>
       </ion-col>
     </ion-row>
+    
   </ion-page>
 </template>
 <script>
