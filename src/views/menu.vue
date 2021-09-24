@@ -34,8 +34,7 @@
       </div>
       <ion-tabs
         @ionTabsWillChange="beforeTabChange"
-        @ionTabsDidChange="afterTabChange"
-      >
+        @ionTabsDidChange="afterTabChange">
         <ion-tab-bar slot="bottom">
           <ion-tab-button tab="speakers" href="/menu">
             <ion-icon :icon="homeOutline"></ion-icon>
@@ -73,7 +72,6 @@ import {
   logOutOutline,
   logOutSharp,
 } from "ionicons/icons";
-
 import { homeOutline } from "ionicons/icons";
 import { useRouter } from "vue-router";
 export default {
@@ -86,7 +84,6 @@ export default {
     IonToolbar,
     IonTitle,
     IonButtons,
-
     IonItem,
     IonLabel,
     IonTabBar,
@@ -94,7 +91,6 @@ export default {
     IonTabs,
     IonMenuButton,
   },
-
   data() {
     return {
       menuarray: [
@@ -102,42 +98,41 @@ export default {
           Heading: "Login",
           Description: "User can login to App",
           Routing: `/login`,
-          icon_name: logInOutline,
+          iconname: logInOutline,
         },
         {
           Heading: "Private Hospitals",
           Description: "User can channel  Private Hospitals",
           Routing: "",
-          icon_name: medkitOutline,
+          iconname: medkitOutline,
         },
         {
           Heading: "Ayurvedic Hospitals",
           Description: "User can channel  Ayurvedic Hospitals",
           Routing: "",
-          icon_name: medkitOutline,
+          iconname: medkitOutline,
         },
         {
-          Heading: "Vedio Consultation",
+          Heading: "Video Consultation",
           Description: "User can channel a doctor Via online",
           Routing: "",
-          icon_name: tvOutline,
+          iconname: tvOutline,
         },
         {
-          Heading: "Medic lab",
+          Heading: "Medical lab",
           Description: "User can Delivery drugs etc..",
-          Routing: "",
-          icon_name: bagAddOutline,
+          Routing: "/medlab",
+          iconname: bagAddOutline,
         },
         {
           Heading: "Logout",
           Description: "User can logout from the application",
           Routing: "",
-          icon_name: logOutOutline,
+          iconname: logOutOutline,
         },
       ],
     };
   },
-
   setup() {
     const beforeTabChange = () => {
       // do something before tab change
@@ -165,6 +160,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-@import "../theme/custom.css";
-</style>
