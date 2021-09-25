@@ -38,7 +38,14 @@
   </ion-page>
 </template>
 <script>
-import { IonPage, IonContent, IonButton, IonCol, IonRow } from "@ionic/vue";
+import { 
+  IonPage, 
+  IonContent, 
+  IonButton, 
+  IonCol, 
+  IonRow,
+} from "@ionic/vue";
+
 export default {
   components: {
     IonPage,
