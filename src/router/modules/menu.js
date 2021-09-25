@@ -48,4 +48,9 @@ export default [
     path: '/savecard',
     component: () => import('@/views/savecard.vue'),
   },
+
+  {
+    path: '/success',
+    component: () => import('@/views/success.vue'),
+  },
 ]
