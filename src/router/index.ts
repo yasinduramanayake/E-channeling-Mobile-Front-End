@@ -1,17 +1,13 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
 
+// routes
 
-
+import Home from "@/router/modules/login";
 
 
 const routes: Array<RouteRecordRaw> = [
-   {
-    path: '',
-    component: () => import ('../views/home.vue')
-  },
-
-
+...Home
 ]
 
 const router = createRouter({
