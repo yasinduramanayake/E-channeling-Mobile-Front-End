@@ -1,6 +1,14 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "E-channeling",
-	"webDir": "dist",
-	"bundledWebRuntime": false
+  "appId": "io.ionic.starter",
+  "appIcon": "assets/Primed_logo.png",
+  "appName": "E-channeling",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
 }

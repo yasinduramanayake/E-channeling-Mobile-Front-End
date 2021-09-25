@@ -6,14 +6,14 @@
       <br />
       <br />
       <center>
-      <div>
-        <img src="assets/medlab.jpg" />
-      </div>
+        <div>
+          <img src="assets/medlab.jpg" />
+        </div>
       </center>
       <br />
       <br />
       <br />
-      <h1> Medical Lab </h1>
+      <h1>Medical Lab</h1>
       <br />
       Your Health Companian
       <br />
@@ -22,27 +22,28 @@
       <br />
       <br />
       <br />
-    
-    <ion-row>
-      <ion-col>
-        <ion-button
-          size="large"
-          color="danger"
-          @click="NextRoute('/meddash')"
-          expand="full"
-          >See More
-        </ion-button>
-      </ion-col>
-    </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-button
+            size="large"
+            color="danger"
+            @click="NextRoute('/meddash')"
+            expand="full"
+            >See More
+          </ion-button>
+        </ion-col>
+      </ion-row>
     </ion-content>
   </ion-page>
 </template>
 <script>
-import { IonPage, IonContent, IonButton } from "@ionic/vue";
+import { IonPage, IonContent, IonButton, IonCol, IonRow } from "@ionic/vue";
 export default {
   components: {
     IonPage,
-
+    IonCol,
+    IonRow,
     IonContent,
     IonButton,
   },

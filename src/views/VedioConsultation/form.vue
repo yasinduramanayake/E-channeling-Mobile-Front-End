@@ -10,7 +10,7 @@
     </ion-header>
     <ion-content class="background-image" no-scroll padding>
       <ion-item>
-        <h1 style="padding-left:135px">Register</h1>
+        <h1 style="padding-left:80px">Vedio Consultation</h1>
       </ion-item>
 
       <br />
@@ -20,31 +20,31 @@
 
       <div style="padding-top:50px">
         <ion-item>
-          <ion-label position="stacked">E-mail</ion-label>
-          <ion-input placeholder="E-mail"></ion-input>
+          <ion-label position="stacked">Hospital</ion-label>
+          <ion-select placeholder="Select One">
+            <ion-select-option value="f">Hemas</ion-select-option>
+            <ion-select-option value="m">Nawaloka</ion-select-option>
+          </ion-select>
         </ion-item>
         <br />
         <br />
 
         <ion-item>
-          <ion-label position="stacked">Password</ion-label>
-          <ion-input placeholder="Password"></ion-input>
+          <ion-label position="stacked">Doctor</ion-label>
+          <ion-select placeholder="Select One">
+            <ion-select-option value="f">Dr.Harichchandra</ion-select-option>
+            <ion-select-option value="m"
+              >Dr.Ranasingha Premadhasa</ion-select-option
+            >
+          </ion-select>
         </ion-item>
         <br />
-        <br />
-
-        <ion-item>
-          <ion-label position="stacked">Re-enter Password</ion-label>
-          <ion-input placeholder="Password"></ion-input>
-        </ion-item>
-        <br />
-
         <ion-button
           size="large"
           color="danger"
-          @click="() => router.push('/login')"
+          @click="() => router.push('/menu')"
           expand="full"
-          >Register
+          >Proceed
         </ion-button>
       </div>
     </ion-content>
@@ -59,15 +59,14 @@ import {
   IonTitle,
   IonButtons,
   IonBackButton,
-  IonInput,
   IonLabel,
   IonItem,
   IonButton,
+  IonSelect,
+  IonSelectOption,
 } from "@ionic/vue";
-import login from "@/router/modules/login";
 import { useRouter } from "vue-router";
 export default {
-  name: login,
   components: {
     IonPage,
     IonContent,
@@ -77,11 +76,12 @@ export default {
     IonButton,
     IonButtons,
     IonBackButton,
-    IonInput,
+
     IonLabel,
     IonItem,
+    IonSelect,
+    IonSelectOption,
   },
-
   setup() {
     const router = useRouter();
     return {
