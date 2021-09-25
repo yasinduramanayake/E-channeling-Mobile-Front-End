@@ -4,11 +4,9 @@
     <ion-item>
         <h1 style="padding-left:60px">Medical Lab Dashboard</h1>
       </ion-item>
-      <br/>
       <center>
         <img src="assets/presc.jpg" />
       </center>
-
       <center>
         <ion-button
           size="small"
@@ -57,23 +55,40 @@
           >Payment Methods
         </ion-button>
       </center>
-
     </ion-content>
+
+    <ion-tabs
+        @ionTabsWillChange="beforeTabChange"
+        @ionTabsDidChange="afterTabChange">
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button tab="speakers" href="/menu">
+            <ion-icon :icon="homeOutline"></ion-icon>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
       
   </ion-page>
 </template>
 <script>
+import { homeOutline } from "ionicons/icons";
+import { useRouter } from "vue-router";
 import { 
   IonPage, 
   IonContent, 
-  IonButton } 
-  from "@ionic/vue";
+  IonButton,
+  IonTabBar,
+  IonTabButton,
+  
+}from "@ionic/vue";
   
 export default {
   components: {
     IonPage,
     IonContent,
     IonButton,
+    IonTabBar,
+    IonTabButton,
+
   },
   methods: {
     NextRoute1() {
@@ -88,6 +103,23 @@ export default {
     NextRoute4() {
       this.$router.push("/paymeth");
     },
+  },
+
+
+setup() {
+    const beforeTabChange = () => {
+      // do something before tab change
+    };
+    const afterTabChange = () => {
+      // do something after tab change
+    };
+    const router = useRouter();
+    return {
+      beforeTabChange,
+      afterTabChange,
+      homeOutline,
+      
+    };
   },
 };
 </script>

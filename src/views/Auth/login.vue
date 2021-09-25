@@ -34,9 +34,17 @@
         <ion-button
           size="large"
           color="danger"
-          @click="NextRoute()"
+          @click="NextRoute1('/menu')"
           expand="full"
           >Login
+        </ion-button>
+<br/>
+        <ion-button
+          size="large"
+          color="danger"
+          @click="NextRoute2()"
+          expand="full"
+          >Forgotten Password
         </ion-button>
       </div>
     </ion-content>
@@ -74,8 +82,11 @@ export default {
     IonItem,
   },
   methods: {
-    NextRoute() {
+    NextRoute1() {
       this.$router.push("/menu");
+    },
+    NextRoute2() {
+      this.$router.push("");
     },
   },
   setup() {
