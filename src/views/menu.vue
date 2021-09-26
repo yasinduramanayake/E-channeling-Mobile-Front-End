@@ -5,12 +5,12 @@
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-title>E-channeling</ion-title>
+      <ion-title style="padding-left:70px">E-channeling</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="background-image" no-scroll padding>
       <ion-item>
-        <h1 style="padding-left:120px">Main Menu</h1>
+        <h1 style="padding-left:100px">Main Menu</h1>
       </ion-item>
 
       <div>
@@ -26,7 +26,7 @@
             <p>{{ item.Description }}</p>
           </ion-label>
           <ion-icon
-            :icon="item.icon_name"
+            :icon="item.iconname"
             style="color: #808080;"
             slot="start"
           ></ion-icon>

@@ -42,13 +42,14 @@
   </ion-page>
 </template>
 <script>
-import { IonPage, IonContent, IonButton } from "@ionic/vue";
+import { IonPage, IonContent, IonButton,IonCol } from "@ionic/vue";
 import { useRouter } from "vue-router";
 export default {
   components: {
     IonPage,
     IonContent,
     IonButton,
+    IonCol
   },
   setup() {
     const router = useRouter();

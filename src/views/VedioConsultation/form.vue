@@ -76,7 +76,6 @@ export default {
     IonButton,
     IonButtons,
     IonBackButton,
-
     IonLabel,
     IonItem,
     IonSelect,

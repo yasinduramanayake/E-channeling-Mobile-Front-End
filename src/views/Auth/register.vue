@@ -5,12 +5,12 @@
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
-        <ion-title>E-channeling</ion-title>
+  <ion-title style="padding-left:70px">E-channeling</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="background-image" no-scroll padding>
       <ion-item>
-        <h1 style="padding-left:135px">Register</h1>
+        <h1 style="padding-left:115px">Register</h1>
       </ion-item>
 
       <br />
