@@ -24,18 +24,21 @@
       <br />
       <br />
       <br />
-    </ion-content>
+    
     <ion-row>
       <ion-col>
+        <center>
         <ion-button
-          size="large"
+          size="medium"
           color="danger"
-          @click="() => router.push()"
-          expand="full"
-          >Proceed
+          @click="NextRoute('/success')"
+          expand="medium"
+          > Proceed
         </ion-button>
+      </center>
       </ion-col>
     </ion-row>
+    </ion-content>
   </ion-page>
 </template>
 <script>
@@ -47,11 +50,12 @@ export default {
     IonContent,
     IonButton,
   },
-  setup() {
-    const router = useRouter();
-    return {
-      router,
-    };
+
+  methods: {
+    NextRoute() {
+      this.$router.push("/success");
+    },
+    
   },
 };
 </script>

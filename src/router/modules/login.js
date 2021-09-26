@@ -4,6 +4,9 @@ export default [
     component: () => import('@/views/home.vue'),
   },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> pubudi
 {
      path: '',
      component: () => import ('@/views/Folder.vue')
@@ -18,7 +21,10 @@ export default [
     component: () => import('@/views/Auth/register.vue'),
   },
 
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> pubudi
 
   {
     path: '/channel1',
@@ -45,5 +51,8 @@ export default [
     path: '/details',
     component: () => import('@/views/details.vue'),
   },
+<<<<<<< HEAD
 >>>>>>> madura
+=======
+>>>>>>> pubudi
 ]

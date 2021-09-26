@@ -1,6 +1,10 @@
 <template>
   <ion-page>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  <span class="border border-danger"></span>
+>>>>>>> pubudi
     <ion-content class="background-image" no-scroll padding>
       <br />
       <br />
@@ -10,8 +14,10 @@
       <br />
       <br />
       <br />
+      <br />
+      <br />
       <center>
-        <img src="assets/download.png" />
+        <img src="assets/logo.png" />
       </center>
       <br />
       <br />
@@ -19,7 +25,10 @@
       <br />
       <br />
       <br />
-    </ion-content>
+      <br />
+      <br />
+      </ion-content>
+    
     <ion-row>
       <ion-col>
         <ion-button
@@ -40,6 +49,7 @@
         </ion-button>
       </ion-col>
     </ion-row>
+<<<<<<< HEAD
 =======
     <ion-content>
      <ion-grid>
@@ -62,6 +72,9 @@
       
     
 >>>>>>> madura
+=======
+    
+>>>>>>> pubudi
   </ion-page>
 </template>
 <script>
@@ -82,26 +95,6 @@ export default {
   },
 };
 </script>
-
-<style>
-
-.loginBtn{
-
-margin-top:5%;
-height:50px;
-}
-
-.regBtn{
-width:100%;
-margin-top:3%;
-
-height:50px;
-}
-
-.logo{
-  padding-top:30%;
-  padding-left:10%;
-  padding-bottom:18%;
-}
-
+<style scoped>
+@import "../theme/custom.css";
 </style>

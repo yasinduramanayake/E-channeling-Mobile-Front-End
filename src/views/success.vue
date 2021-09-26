@@ -13,9 +13,6 @@
       <br />
       <br />
       <br />
-      <h1>Medical Lab</h1>
-      <br />
-      Your Health Companian
       <br />
       <br />
       <br />
@@ -30,7 +27,7 @@
             color="danger"
             @click="NextRoute('/meddash')"
             expand="full"
-            >See More
+            >Go Back To Home
           </ion-button>
         </ion-col>
       </ion-row>

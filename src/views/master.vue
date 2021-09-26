@@ -7,45 +7,44 @@
         </ion-buttons>
         <ion-title>E-channeling</ion-title>
       </ion-toolbar>
-    </ion-header>
+    </ion-header>  
     <ion-content class="background-image" no-scroll padding>
       <ion-item>
-        <h1 style="padding-left:150px">Login</h1>
+        <h1 style="padding-left:60px">Master Card Details</h1>
       </ion-item>
-
-      <br />
-      <br />
-      <br />
-      <br />
-
+      <center>
+        <img src="assets/master4.png" />
+      </center>
       <div style="padding-top:50px">
         <ion-item>
-          <ion-label position="stacked">E-mail</ion-label>
-          <ion-input placeholder="E-mail"></ion-input>
+          <ion-input placeholder="Card Number"></ion-input>
         </ion-item>
         <br />
+
+        <ion-item> 
+          <ion-input placeholder="Card Holder"></ion-input>
+        </ion-item>
+        <br />
+      
+        <ion-item>
+          <ion-input placeholder="Expiry Date"></ion-input>
+        </ion-item>
         <br />
 
         <ion-item>
-          <ion-label position="stacked">Password</ion-label>
-          <ion-input placeholder="Password"></ion-input>
+          <ion-input placeholder="CVV"></ion-input>
         </ion-item>
         <br />
+<center>
         <ion-button
           size="large"
           color="danger"
-          @click="NextRoute1('/menu')"
-          expand="full"
-          >Login
+          @click="NextRoute('/savecard')"
+          expand="medium"
+          >Add
         </ion-button>
-<br/>
-        <ion-button
-          size="large"
-          color="danger"
-          @click="NextRoute2()"
-          expand="full"
-          >Forgotten Password
-        </ion-button>
+        
+</center>
       </div>
     </ion-content>
   </ion-page>
@@ -60,14 +59,10 @@ import {
   IonButtons,
   IonBackButton,
   IonInput,
-  IonLabel,
   IonItem,
   IonButton,
 } from "@ionic/vue";
-import login from "@/router/modules/login";
-import { useRouter } from "vue-router";
 export default {
-  name: login,
   components: {
     IonPage,
     IonContent,
@@ -78,25 +73,16 @@ export default {
     IonButtons,
     IonBackButton,
     IonInput,
-    IonLabel,
     IonItem,
   },
   methods: {
-    NextRoute1() {
-      this.$router.push("/menu");
+    NextRoute() {
+      this.$router.push("/savecard");
     },
-    NextRoute2() {
-      this.$router.push("");
-    },
-  },
-  setup() {
-    const router = useRouter();
-    return {
-      router,
-    };
   },
 };
 </script>
+
 <style scoped>
-@import "../../theme/custom.css";
+@import "../theme/custom.css";
 </style>
