@@ -4,12 +4,12 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <ion-header>
-              <ion-toolbar>
+            <ion-header :translucent="true">
+              <ion-toolbar color="light">
                 <ion-buttons slot="start">
-                  <ion-back-button :text="Back" :icon="buttonIcon">
-                  </ion-back-button>
+                  <ion-back-button text="" default-href="/"></ion-back-button>
                 </ion-buttons>
+                <ion-title>Ayurvedic Hospital Channeling</ion-title>
               </ion-toolbar>
             </ion-header>
           </ion-col>
@@ -86,7 +86,9 @@
                 <BR />
                 <Br />
 
-                <ion-button expand="block">Search</ion-button>
+                <ion-button expand="block" @click="NextRoute('/profile')"
+                  >Search</ion-button
+                >
                 <BR />
                 <Br />
               </ion-card-content>
@@ -94,6 +96,17 @@
           </ion-col>
         </ion-row>
       </ion-grid>
+
+      <ion-tabs
+        @ionTabsWillChange="beforeTabChange"
+        @ionTabsDidChange="afterTabChange"
+      >
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button tab="speakers" href="/menu">
+            <ion-icon :icon="homeOutline"></ion-icon>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
     </ion-content>
   </ion-page>
 </template>
@@ -101,15 +114,49 @@
 <script>
 import {
   IonPage,
+  IonGrid,
+  IonRow,
+  IonCol,
   IonContent,
+  IonCardHeader,
+  IonCardTitle,
+  IonCardSubtitle,
   IonCard,
   IonInput,
   IonToolbar,
   IonButton,
   IonHeader,
+  IonTabs,
+  IonTabBar,
+  IonTabButton,
+  IonIcon,
+  IonSelectOption,
+  IonSelect,
+  IonItem,
+  IonList,
+  IonCardContent,
+  IonText,
+  IonBackButton,
 } from "@ionic/vue";
 export default {
   components: {
+    IonTabs,
+    IonBackButton,
+    IonGrid,
+    IonRow,
+    IonCol,
+    IonText,
+    IonCardContent,
+    IonSelect,
+    IonItem,
+    IonList,
+    IonCardHeader,
+    IonCardTitle,
+    IonCardSubtitle,
+    IonSelectOption,
+    IonTabButton,
+    IonTabBar,
+    IonIcon,
     IonPage,
     IonContent,
     IonCard,
@@ -117,6 +164,12 @@ export default {
     IonInput,
     IonButton,
     IonHeader,
+  },
+
+  methods: {
+    NextRoute() {
+      this.$router.push("/profile");
+    },
   },
 };
 </script>

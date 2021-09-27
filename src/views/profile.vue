@@ -4,12 +4,15 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-            <ion-header>
-              <ion-toolbar>
+            <ion-header :translucent="true">
+              <ion-toolbar color="light">
                 <ion-buttons slot="start">
-                  <ion-back-button :text="Back" :icon="buttonIcon">
-                  </ion-back-button>
+                  <ion-back-button
+                    text=""
+                    default-href="/"
+                  ></ion-back-button>
                 </ion-buttons>
+                <ion-title> E-Channeling</ion-title>
               </ion-toolbar>
             </ion-header>
           </ion-col>
@@ -150,16 +153,24 @@ import {
   IonPage,
   IonContent,
   IonCard,
-  IonToolbar,
+  IonCol,
+  IonRow,
   IonHeader,
+  IonCardHeader,
+  IonCardSubtitle,
+  IonToolbar,
 } from "@ionic/vue";
 export default {
   components: {
     IonPage,
     IonContent,
     IonCard,
-    IonToolbar,
+    IonCol,
+    IonCardHeader,
+    IonRow,
     IonHeader,
+    IonCardSubtitle,
+    IonToolbar,
   },
 };
 </script>

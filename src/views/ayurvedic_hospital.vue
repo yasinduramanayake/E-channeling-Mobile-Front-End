@@ -3,7 +3,19 @@
     <ion-content>
       <ion-grid>
         <ion-row>
-          <ion-col> </ion-col>
+          <ion-col>
+            <ion-header :translucent="true">
+              <ion-toolbar color="light">
+                <ion-buttons slot="start">
+                  <ion-back-button
+                    text=""
+                    default-href="/"
+                  ></ion-back-button>
+                </ion-buttons>
+                <ion-title>Ayurvedic Hospital Channeling</ion-title>
+              </ion-toolbar>
+            </ion-header>
+          </ion-col>
         </ion-row>
 
         <ion-row>
@@ -16,7 +28,6 @@
           <ion-col>
             <ion-card>
               <ion-card-header>
-            
                 <ion-card-title>Ayurvedic Hospital</ion-card-title>
                 <ion-card-subtitle>Doctor Channeling</ion-card-subtitle>
                 <Br />
@@ -40,8 +51,12 @@
                   </ion-text>
 
                   <ion-item>
-                    <ion-select value="brown"  placeholder="Select The Specialization" ok-text="OK" cancel-text="Cancel">
-                    
+                    <ion-select
+                      value="brown"
+                      placeholder="Select The Specialization"
+                      ok-text="OK"
+                      cancel-text="Cancel"
+                    >
                       <ion-select-option value="blonde"
                         >Aesthetic Cosmetologist</ion-select-option
                       >
@@ -107,15 +122,15 @@ export default {
   width: 120px;
 }
 
-ion-input{
-            border-radius: 10px;
-            padding-right: 30px;
-            padding-left: 30px;
-            font-size: 0.9em;
-            border: 1px solid #f1f1f1;
-            --background: rgb(219,219,219);
-            /* height: 10%; */
-            max-width: 100vw; 
-            max-height: 10vh;
-        }
+ion-input {
+  border-radius: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 0.9em;
+  border: 1px solid #f1f1f1;
+  --background: rgb(219, 219, 219);
+  /* height: 10%; */
+  max-width: 100vw;
+  max-height: 10vh;
+}
 </style>

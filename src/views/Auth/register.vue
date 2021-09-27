@@ -38,15 +38,18 @@
           <ion-input placeholder="Password"></ion-input>
         </ion-item>
         <br />
+        <br />
+        <br />
 
         <ion-button
           size="large"
-          color="danger"
+          color="primary"
           @click="() => router.push('/login')"
-          expand="full"
+          expand="block"
           >Register
         </ion-button>
       </div>
+
     </ion-content>
   </ion-page>
 </template>

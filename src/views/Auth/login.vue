@@ -33,15 +33,16 @@
         <br />
         <ion-button
           size="large"
-          color="danger"
+          color="primary"
           @click="NextRoute1('/menu')"
-          expand="full"
+          expand="block"
           >Login
         </ion-button>
 <br/>
+
         <ion-button
-          size="large"
-          color="danger"
+          size="Medium"
+          color="secondary"
           @click="NextRoute2()"
           expand="full"
           >Forgotten Password

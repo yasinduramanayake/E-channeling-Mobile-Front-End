@@ -104,13 +104,13 @@ export default {
         {
           Heading: "Private Hospitals",
           Description: "User can channel  Private Hospitals",
-          Routing: "",
+          Routing: "/channel1",
           iconname: medkitOutline,
         },
         {
           Heading: "Ayurvedic Hospitals",
           Description: "User can channel  Ayurvedic Hospitals",
-          Routing: "",
+          Routing: "/channel2",
           iconname: medkitOutline,
         },
         {
