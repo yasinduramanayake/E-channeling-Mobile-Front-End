@@ -58,7 +58,8 @@ export default {
     IonButton,
     IonCol,
   },
-  setup() {
+
+   setup() {
     const router = useRouter();
     return {
       router,
