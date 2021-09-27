@@ -5,20 +5,18 @@
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
-        <ion-title>E-channeling</ion-title>
+       <ion-title style="padding-left:70px">E-channeling</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content class="background-image" no-scroll padding>
+    <ion-content >
       <ion-item>
         <h1 style="padding-left:80px">Vedio Consultation</h1>
       </ion-item>
+      
+<Logo/>
+      
 
-      <br />
-      <br />
-      <br />
-      <br />
-
-      <div style="padding-top:50px">
+      
         <ion-item>
           <ion-label position="stacked">Hospital</ion-label>
           <ion-select placeholder="Select One">
@@ -46,7 +44,9 @@
           expand="full"
           >Proceed
         </ion-button>
-      </div>
+ 
+
+      <Footer />
     </ion-content>
   </ion-page>
 </template>
@@ -65,7 +65,9 @@ import {
   IonSelect,
   IonSelectOption,
 } from "@ionic/vue";
+import Logo from '@/views/components/logo.vue';
 import { useRouter } from "vue-router";
+import Footer from "@/views/components/footer.vue"
 export default {
   components: {
     IonPage,
@@ -80,6 +82,8 @@ export default {
     IonItem,
     IonSelect,
     IonSelectOption,
+    Footer ,
+    Logo
   },
   setup() {
     const router = useRouter();
@@ -89,6 +93,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-@import "../../theme/custom.css";
-</style>

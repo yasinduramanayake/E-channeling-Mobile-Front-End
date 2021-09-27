@@ -86,7 +86,7 @@
                 <BR />
                 <Br />
 
-                <ion-button expand="block">Search</ion-button>
+                <ion-button expand="block"  @click="() => router.push('/profile')"  >Search</ion-button>
                 <BR />
                 <Br />
               </ion-card-content>
@@ -99,6 +99,7 @@
 </template>
 
 <script>
+import { useRouter } from "vue-router";
 import {
   IonPage,
   IonContent,
@@ -117,6 +118,12 @@ export default {
     IonInput,
     IonButton,
     IonHeader,
+  },
+  setup() {
+    const router = useRouter();
+    return {
+      router,
+    };
   },
 };
 </script>

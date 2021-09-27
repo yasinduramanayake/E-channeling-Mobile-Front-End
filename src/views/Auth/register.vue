@@ -13,12 +13,9 @@
         <h1 style="padding-left:115px">Register</h1>
       </ion-item>
 
-      <br />
-      <br />
-      <br />
-      <br />
+    <Logo/>
 
-      <div style="padding-top:50px">
+     
         <ion-item>
           <ion-label position="stacked">E-mail</ion-label>
           <ion-input placeholder="E-mail"></ion-input>
@@ -46,7 +43,7 @@
           expand="full"
           >Register
         </ion-button>
-      </div>
+    
     </ion-content>
   </ion-page>
 </template>
@@ -65,6 +62,7 @@ import {
   IonButton,
 } from "@ionic/vue";
 import login from "@/router/modules/login";
+import Logo from '@/views/components/logo.vue';
 import { useRouter } from "vue-router";
 export default {
   name: login,
@@ -80,6 +78,7 @@ export default {
     IonInput,
     IonLabel,
     IonItem,
+    Logo
   },
 
   setup() {
@@ -90,6 +89,4 @@ export default {
   },
 };
 </script>
-<style scoped>
-@import "../../theme/custom.css";
-</style>
+

@@ -22,7 +22,7 @@
           detail=""
         >
           <ion-label>
-            <h1>{{ item.Heading }}</h1>
+            <h3>{{ item.Heading }}</h3>
             <p>{{ item.Description }}</p>
           </ion-label>
           <ion-icon
@@ -32,16 +32,8 @@
           ></ion-icon>
         </ion-item>
       </div>
-      <ion-tabs
-        @ionTabsWillChange="beforeTabChange"
-        @ionTabsDidChange="afterTabChange"
-      >
-        <ion-tab-bar slot="bottom">
-          <ion-tab-button tab="speakers" href="/menu">
-            <ion-icon :icon="homeOutline"></ion-icon>
-          </ion-tab-button>
-        </ion-tab-bar>
-      </ion-tabs>
+    
+    <Footer/>
     </ion-content>
   </ion-page>
 </template>
@@ -54,13 +46,11 @@ import {
   IonTitle,
   IonButtons,
   IonIcon,
-  IonTabBar,
-  IonTabButton,
-  IonTabs,
   IonMenuButton,
   IonItem,
   IonLabel,
 } from "@ionic/vue";
+import Footer from "@/views/components/footer.vue"
 import {
   medkitOutline,
   medkitSharp,
@@ -73,11 +63,11 @@ import {
   logOutOutline,
   logOutSharp,
 } from "ionicons/icons";
-import { homeOutline } from "ionicons/icons";
 import { useRouter } from "vue-router";
 export default {
   name: "Folder",
   components: {
+    Footer,
     IonPage,
     IonIcon,
     IonContent,
@@ -87,9 +77,6 @@ export default {
     IonButtons,
     IonItem,
     IonLabel,
-    IonTabBar,
-    IonTabButton,
-    IonTabs,
     IonMenuButton,
   },
   data() {
@@ -99,53 +86,44 @@ export default {
           Heading: "Login",
           Description: "User can login to App",
           Routing: `/login`,
-          iconname: logInOutline,
+          iconname: logInSharp,
         },
         {
           Heading: "Private Hospitals",
           Description: "User can channel  Private Hospitals",
-          Routing: "",
-          iconname: medkitOutline,
+          Routing: "/channel1",
+          iconname: medkitSharp,
         },
         {
           Heading: "Ayurvedic Hospitals",
           Description: "User can channel  Ayurvedic Hospitals",
-          Routing: "",
-          iconname: medkitOutline,
+          Routing: "/channel2",
+          iconname: medkitSharp,
         },
         {
           Heading: "Video Consultation",
           Description: "User can channel a doctor Via online",
           Routing: `/vedio`,
-          iconname: tvOutline,
+          iconname: tvSharp,
         },
         {
           Heading: "Medical lab",
           Description: "User can Delivery drugs etc..",
           Routing: `/medlab`,
-          iconname: bagAddOutline,
+          iconname: bagAddSharp,
         },
         {
           Heading: "Logout",
           Description: "User can logout from the application",
           Routing: "",
-          iconname: logOutOutline,
+          iconname: logOutSharp,
         },
       ],
     };
   },
   setup() {
-    const beforeTabChange = () => {
-      // do something before tab change
-    };
-    const afterTabChange = () => {
-      // do something after tab change
-    };
     const router = useRouter();
     return {
-      beforeTabChange,
-      homeOutline,
-      afterTabChange,
       router,
       medkitOutline,
       medkitSharp,
