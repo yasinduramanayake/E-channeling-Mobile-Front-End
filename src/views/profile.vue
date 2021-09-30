@@ -145,6 +145,9 @@
         </ion-row>
       </ion-grid>
     </ion-content>
+
+          <Footer />
+
   </ion-page>
 </template>
 
@@ -160,6 +163,8 @@ import {
   IonCardSubtitle,
   IonToolbar,
 } from "@ionic/vue";
+import Footer from '@/views/components/footer.vue';
+
 export default {
   components: {
     IonPage,
@@ -171,6 +176,7 @@ export default {
     IonHeader,
     IonCardSubtitle,
     IonToolbar,
+    Footer,
   },
 };
 </script>

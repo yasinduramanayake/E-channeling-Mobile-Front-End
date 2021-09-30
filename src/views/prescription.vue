@@ -8,14 +8,10 @@
         <ion-title>E-channeling</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content class="background-image" no-scroll padding>
-      <ion-item>
-        <h1 style="padding-left:60px">Prescription Details</h1>
-      </ion-item>
+    <ion-content class="background-image">
+<Logo />
 
-      <br />
-
-      <div style="padding-top:50px">
+      <div style="padding-top:20px">
         <ion-item>
           <ion-label position="stacked">Patient Name</ion-label>
           <ion-input placeholder="Patient Name"></ion-input>
@@ -45,15 +41,15 @@
         </ion-item>
         <br />
 
-        <ion-button
-          size="large"
-          color="danger"
+        <ion-button class="btn_main"
+          color="primary"
           @click="NextRoute('/meddash')"
-          expand="full"
+          expand="block"
           >Add
         </ion-button>
       </div>
     </ion-content>
+    <Footer />
   </ion-page>
 </template>
 <script>
@@ -70,6 +66,8 @@ import {
   IonItem,
   IonButton,
 } from "@ionic/vue";
+import Footer from "@/views/components/footer.vue";
+import Logo from "@/views/components/logo_sm.vue";
 export default {
   components: {
     IonPage,
@@ -83,6 +81,8 @@ export default {
     IonInput,
     IonLabel,
     IonItem,
+    Footer,
+    Logo,
   },
   methods: {
     NextRoute() {
@@ -94,4 +94,9 @@ export default {
 
 <style scoped>
 @import "../theme/custom.css";
+
+.btn_main{
+padding-left: 5%;
+padding-right: 5%;
+}
 </style>

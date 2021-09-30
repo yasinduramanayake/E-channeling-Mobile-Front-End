@@ -5,17 +5,20 @@
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
-        <ion-title>E-channeling</ion-title>
+        <ion-title>Lab Test</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content class="background-image" no-scroll padding>
-      <ion-item>
-        <h1 style="padding-left:60px">Lab Test Details</h1>
-      </ion-item>
 
-      <br />
+    <ion-content>
+      <ion-grid>
+        <ion-row> </ion-row>
+        <ion-row>
+          <br />
+          <img class="img" src="assets/lab.jpg" />
+        </ion-row>
+      </ion-grid>
 
-      <div style="padding-top:50px">
+      <div>
         <ion-item>
           <ion-label position="stacked">Patient Name</ion-label>
           <ion-input placeholder="Patient Name"></ion-input>
@@ -27,7 +30,7 @@
           <ion-input placeholder="Your Area"></ion-input>
         </ion-item>
         <br />
-      
+
         <ion-item>
           <ion-label position="stacked">Laboratory Name</ion-label>
           <ion-input placeholder="Laboratory Name"></ion-input>
@@ -46,10 +49,10 @@
         <br />
 
         <ion-button
-          size="large"
-          color="danger"
+          class="btn"
+          color="primary"
           @click="NextRoute('/meddash')"
-          expand="full"
+          expand="block"
           >Add
         </ion-button>
       </div>
@@ -68,8 +71,11 @@ import {
   IonInput,
   IonLabel,
   IonItem,
+  IonGrid,
+  IonRow,
   IonButton,
 } from "@ionic/vue";
+
 import { useRouter } from "vue-router";
 export default {
   components: {
@@ -84,6 +90,8 @@ export default {
     IonInput,
     IonLabel,
     IonItem,
+    IonGrid,
+    IonRow,
   },
   methods: {
     NextRoute() {
@@ -95,4 +103,15 @@ export default {
 
 <style scoped>
 @import "../theme/custom.css";
+
+.btn {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.img {
+  padding-right: 8%;
+  padding-left: 8%;
+  height: 180px;
+  width: 400px;
+}
 </style>

@@ -9,7 +9,7 @@
                 <ion-buttons slot="start">
                   <ion-back-button text="" default-href="/"></ion-back-button>
                 </ion-buttons>
-                <ion-title>Ayurvedic Hospital Channeling</ion-title>
+                <ion-title>Private Hospital Channeling</ion-title>
               </ion-toolbar>
             </ion-header>
           </ion-col>
@@ -86,10 +86,11 @@
                 <BR />
                 <Br />
 
-                <ion-button expand="block" @click="NextRoute('/profile')"
+                <ion-button
+                  expand="block"
+                  @click="() => router.push('/profile')"
                   >Search</ion-button
                 >
-                <ion-button expand="block"  @click="() => router.push('/profile')"  >Search</ion-button>
                 <BR />
                 <Br />
               </ion-card-content>
@@ -97,17 +98,6 @@
           </ion-col>
         </ion-row>
       </ion-grid>
-
-      <ion-tabs
-        @ionTabsWillChange="beforeTabChange"
-        @ionTabsDidChange="afterTabChange"
-      >
-        <ion-tab-bar slot="bottom">
-          <ion-tab-button tab="speakers" href="/menu">
-            <ion-icon :icon="homeOutline"></ion-icon>
-          </ion-tab-button>
-        </ion-tab-bar>
-      </ion-tabs>
     </ion-content>
   </ion-page>
 </template>
@@ -116,68 +106,61 @@
 import { useRouter } from "vue-router";
 import {
   IonPage,
+  IonContent,
+  IonCard,
+  IonInput,
   IonGrid,
   IonRow,
   IonCol,
-  IonContent,
+  IonToolbar,
+  IonButton,
+  IonBackButton,
+  IonHeader,
+  IonTitle,
   IonCardHeader,
   IonCardTitle,
   IonCardSubtitle,
-  IonCard,
-  IonInput,
-  IonToolbar,
-  IonButton,
-  IonHeader,
-  IonTabs,
-  IonTabBar,
-  IonTabButton,
-  IonIcon,
-  IonSelectOption,
-  IonSelect,
-  IonItem,
-  IonList,
   IonCardContent,
   IonText,
-  IonBackButton,
+  IonList,
+  IonItem,
+  IonSelect,
+  IonSelectOption,
 } from "@ionic/vue";
+
 export default {
   components: {
-    IonTabs,
-    IonBackButton,
-    IonGrid,
-    IonRow,
-    IonCol,
-    IonText,
-    IonCardContent,
-    IonSelect,
-    IonItem,
-    IonList,
-    IonCardHeader,
-    IonCardTitle,
-    IonCardSubtitle,
-    IonSelectOption,
-    IonTabButton,
-    IonTabBar,
-    IonIcon,
     IonPage,
     IonContent,
     IonCard,
-    IonToolbar,
+    IonGrid,
     IonInput,
+    IonRow,
+    IonCol,
+    IonToolbar,
     IonButton,
+    IonBackButton,
     IonHeader,
+    IonTitle,
+    IonCardHeader,
+    IonCardTitle,
+    IonCardSubtitle,
+    IonCardContent,
+    IonText,
+    IonList,
+    IonItem,
+    IonSelect,
+    IonSelectOption,
+  },
+  methods: {
   },
 
-  methods: {
-    NextRoute() {
-      this.$router.push("/profile");
+      setup() {
+      const router = useRouter();
+      return {
+        router,
+      };
     },
-  setup() {
-    const router = useRouter();
-    return {
-      router,
-    };
-  },
 };
 </script>
 

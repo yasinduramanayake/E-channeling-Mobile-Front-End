@@ -1,86 +1,149 @@
 <template>
   <ion-page>
+    <ion-header :translucent="true">
+      <ion-toolbar color="light">
+        <ion-buttons slot="start">
+          <ion-back-button text="" default-href="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Medical Lab</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <br />
     <ion-content class="background-image" no-scroll padding>
-    <ion-item>
-        <h1 style="padding-left:60px">Medical Lab Dashboard</h1>
-      </ion-item>
-      <center>
-        <img src="assets/presc.jpg" />
-      </center>
-      <center>
-        <ion-button
-          size="small"
-          color="danger"
-          @click="NextRoute1('/prescription')"
-          expand="medium"
-          >Add Prescription Details
-        </ion-button>
-      </center>
+      <ion-card>
+        <ion-card-header>
+          <Br /><ion-title>Prescription Details</ion-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <center>
+                  <div class="img">
+                    <img src="assets/presc.jpg" />
+                  </div>
+                </center>
+                <ion-button class="btn"
+                  color="primary"
+                  @click="NextRoute1('/prescription')"
+                  expand="block"
+                  >Add Prescription Details
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
 
-      <center>
-        <img src="assets/labtest.jpg" />
-      </center>
-      <center>
-        <ion-button
-          size="small"
-          color="danger"
-          @click="NextRoute2('/labtest')"
-          expand="medium"
-          >Add Labtest Details
-        </ion-button>
-      </center>
+      <ion-card>
+        <ion-card-header>
+          <Br /><ion-title>Lab Test Details</ion-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <center>
+                  <div class="img">
+                    <img src="assets/labtest.jpg" />
+                  </div>
+                </center>
+                <ion-button class="btn"
+                  color="primary"
+                  @click="NextRoute2('/labtest')"
+                  expand="block"
+                  >Add Labtest Details
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
 
-    <center>
-        <img src="assets/dtot.jpg" />
-      </center>
-      <center>
-        <ion-button
-          size="small"
-          color="danger"
-          @click="NextRoute3('/drug')"
-          expand="medium"
-          >Drugs to Deliver
-        </ion-button>
-      </center>
-    
-    <center>
-        <img src="assets/pay.jpg" />
-      </center>
-      <center>
-        <ion-button 
-          size="small"
-          color="danger"
-          @click="NextRoute4('/paymeth')"
-          expand="medium"
-          >Payment Methods
-        </ion-button>
-      </center>
+      <ion-card>
+        <ion-card-header>
+          <Br /><ion-title>Drug Delivery Details</ion-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <center>
+                  <div class="img">
+                    <img src="assets/dtot.jpg" />
+                  </div>
+                </center>
+                <ion-button class="btn"
+                  color="primary"
+                  @click="NextRoute3('/drug')"
+                  expand="block"
+                  >Drugs to Deliver
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-header>
+          <Br /><ion-title>Payment Details</ion-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <center>
+                  <div class="img">
+                    <img src="assets/pay.jpg" />
+                  </div>
+                </center>
+                <ion-button class="btn"
+                  color="primary"
+                  @click="NextRoute4('/paymeth')"
+                  expand="block"
+                  >Payment Details
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
     </ion-content>
 
     <ion-tabs
-        @ionTabsWillChange="beforeTabChange"
-        @ionTabsDidChange="afterTabChange">
-        <ion-tab-bar slot="bottom">
-          <ion-tab-button tab="speakers" href="/menu">
-            <ion-icon :icon="homeOutline"></ion-icon>
-          </ion-tab-button>
-        </ion-tab-bar>
-      </ion-tabs>
-      
+      @ionTabsWillChange="beforeTabChange"
+      @ionTabsDidChange="afterTabChange"
+    >
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="speakers" href="/menu">
+          <ion-icon :icon="homeOutline"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
   </ion-page>
 </template>
 <script>
 import { homeOutline } from "ionicons/icons";
 import { useRouter } from "vue-router";
-import { 
-  IonPage, 
-  IonContent, 
+import {
+  IonPage,
+  IonContent,
   IonButton,
   IonTabBar,
   IonTabButton,
-  
-}from "@ionic/vue";
-  
+  IonHeader,
+  IonToolbar,
+  IonBackButton,
+  IonCardContent,
+  IonCard,
+  IonCardHeader,
+  IonGrid,
+  IonCol,
+  IonRow,
+  IonTitle,
+} from "@ionic/vue";
+
 export default {
   components: {
     IonPage,
@@ -88,7 +151,16 @@ export default {
     IonButton,
     IonTabBar,
     IonTabButton,
-
+    IonHeader,
+    IonToolbar,
+    IonBackButton,
+    IonCardContent,
+    IonCard,
+    IonCardHeader,
+    IonGrid,
+    IonCol,
+    IonRow,
+    IonTitle,
   },
   methods: {
     NextRoute1() {
@@ -105,8 +177,7 @@ export default {
     },
   },
 
-
-setup() {
+  setup() {
     const beforeTabChange = () => {
       // do something before tab change
     };
@@ -118,11 +189,20 @@ setup() {
       beforeTabChange,
       afterTabChange,
       homeOutline,
-      
     };
   },
 };
 </script>
 <style scoped>
 @import "../theme/custom.css";
+
+.btn {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.img {
+  height: 150px;
+  width: 150px;
+}
 </style>

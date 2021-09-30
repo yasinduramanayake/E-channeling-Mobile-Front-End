@@ -1,77 +1,89 @@
 <template>
   <ion-page>
-  <ion-header :translucent="true">
+    <ion-header :translucent="true">
       <ion-toolbar color="light">
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/meddash"></ion-back-button>
         </ion-buttons>
-        <ion-title>E-channeling</ion-title>
+        <ion-title>Payment Methods</ion-title>
       </ion-toolbar>
-    </ion-header>  
+    </ion-header>
     <ion-content class="background-image" no-scroll padding>
-    <ion-item>
-        <h1 style="padding-left:60px">Payment Methods</h1>
-      </ion-item>
-      <br/>
-      <br/>
-      <center>
-        <img src="assets/visa4.png" />
-      </center>
-      <center>
-        <ion-button
-          size="small"
-          color="danger"
-          @click="NextRoute1('/visa')"
-          expand="full"
-          >visa
-        </ion-button>
-      </center>
-<br/>
-      <center>
-        <img src="assets/master4.png" />
-      </center>
-      <br/> <br/>
-      <center>
-        <ion-button
-          size="small"
-          color="danger"
-          @click="NextRoute2('/master')"
-          expand="full"
-          >Master
-        </ion-button>
-      </center>
+      <br />
+      <br />
+      <ion-card>
+        <ion-card-content>
+          <center>
+            <img src="assets/visa4.png" />
+          </center>
+          <center>
+            <ion-button
+              class="btn"
+              color="primary"
+              @click="NextRoute1('/visa')"
+              expand="block"
+              >visa
+            </ion-button>
+          </center>
+        </ion-card-content>
+      </ion-card>
+      <br />
 
-    <br/> <br/>
-      <center>
-        <ion-button
-          size="small"
-          color="danger"
-          @click="NextRoute3('/savecard')"
-          expand="full"
-          >Saved cards Details
-        </ion-button>
-      </center>
-    
+      <ion-card>
+        <ion-card-content>
+          <center>
+            <img src="assets/master4.png" />
+          </center>
+          <br />
+          <br />
+          <center>
+            <ion-button
+              class="btn"
+              color="primary"
+              @click="NextRoute2('/master')"
+              expand="block"
+              >Master
+            </ion-button>
+          </center>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card>
+        <ion-card-subtitle>SAVED CARD </ion-card-subtitle>
+        <ion-card-content>
+          <br />
+          <br />
+          <center>
+            <ion-button
+              class="btn"
+              color="primary"
+              @click="NextRoute3('/savecard')"
+              expand="block"
+              >Saved cards Details
+            </ion-button>
+          </center>
+        </ion-card-content>
+      </ion-card>
     </ion-content>
 
     <ion-tabs
-        @ionTabsWillChange="beforeTabChange"
-        @ionTabsDidChange="afterTabChange">
-        <ion-tab-bar slot="bottom">
-          <ion-tab-button tab="speakers" href="/menu">
-            <ion-icon :icon="homeOutline"></ion-icon>
-          </ion-tab-button>
-        </ion-tab-bar>
-      </ion-tabs>
-      
+      @ionTabsWillChange="beforeTabChange"
+      @ionTabsDidChange="afterTabChange"
+    >
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="speakers" href="/menu">
+          <ion-icon :icon="homeOutline"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
   </ion-page>
 </template>
 <script>
 import { homeOutline } from "ionicons/icons";
 import { useRouter } from "vue-router";
-import { 
-  IonPage, 
-  IonContent, 
+import {
+  IonPage,
+  IonContent,
   IonButton,
   IonTabBar,
   IonTabButton,
@@ -80,10 +92,11 @@ import {
   IonTitle,
   IonButtons,
   IonBackButton,
-  IonItem,
-  
-}from "@ionic/vue";
-  
+  IonCard,
+  IonCardContent,
+  IonCardSubtitle,
+} from "@ionic/vue";
+
 export default {
   components: {
     IonPage,
@@ -96,8 +109,9 @@ export default {
     IonToolbar,
     IonButtons,
     IonBackButton,
-    IonItem,
-
+    IonCard,
+    IonCardContent,
+    IonCardSubtitle,
   },
   methods: {
     NextRoute1() {
@@ -111,8 +125,7 @@ export default {
     },
   },
 
-
-setup() {
+  setup() {
     const beforeTabChange = () => {
       // do something before tab change
     };
@@ -124,11 +137,15 @@ setup() {
       beforeTabChange,
       afterTabChange,
       homeOutline,
-      
     };
   },
 };
 </script>
 <style scoped>
 @import "../theme/custom.css";
+
+.btn {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 </style>

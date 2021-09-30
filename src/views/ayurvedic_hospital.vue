@@ -7,10 +7,7 @@
             <ion-header :translucent="true">
               <ion-toolbar color="light">
                 <ion-buttons slot="start">
-                  <ion-back-button
-                    text=""
-                    default-href="/"
-                  ></ion-back-button>
+                  <ion-back-button text="" default-href="/"></ion-back-button>
                 </ion-buttons>
                 <ion-title>Ayurvedic Hospital Channeling</ion-title>
               </ion-toolbar>
@@ -89,7 +86,11 @@
                 <BR />
                 <Br />
 
-                <ion-button expand="block">Search</ion-button>
+                <ion-button
+                  expand="block"
+                  @click="() => router.push('/profile')"
+                  >Search</ion-button
+                >
                 <BR />
                 <Br />
               </ion-card-content>
@@ -98,18 +99,68 @@
         </ion-row>
       </ion-grid>
     </ion-content>
+    <Footer />
   </ion-page>
 </template>
 
 <script>
-import { IonPage, IonContent, IonCard, IonInput } from "@ionic/vue";
+import { useRouter } from "vue-router";
+import {
+  IonPage,
+  IonContent,
+  IonCard,
+  IonInput,
+  IonGrid,
+  IonRow,
+  IonCol,
+  IonToolbar,
+  IonButton,
+  IonBackButton,
+  IonHeader,
+  IonTitle,
+  IonCardHeader,
+  IonCardTitle,
+  IonCardSubtitle,
+  IonCardContent,
+  IonText,
+  IonList,
+  IonItem,
+  IonSelect,
+  IonSelectOption,
+} from "@ionic/vue";
+import Footer from '@/views/components/footer.vue';
 export default {
   components: {
     IonPage,
     IonContent,
     IonCard,
-
+    IonGrid,
     IonInput,
+    IonRow,
+    IonCol,
+    IonToolbar,
+    IonButton,
+    IonBackButton,
+    IonHeader,
+    IonTitle,
+    IonCardHeader,
+    IonCardTitle,
+    IonCardSubtitle,
+    IonCardContent,
+    IonText,
+    IonList,
+    IonItem,
+    IonSelect,
+    IonSelectOption,
+    Footer,
+  },
+  methods: {
+    setup() {
+      const router = useRouter();
+      return {
+        router,
+      };
+    },
   },
 };
 </script>
