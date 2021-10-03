@@ -9,7 +9,11 @@
                 <ion-buttons slot="start">
                   <ion-back-button text="" ></ion-back-button>
                 </ion-buttons>
+<<<<<<< HEAD
                 <ion-title>Private Hospital Channeling</ion-title>
+=======
+                <ion-title>Ayurvedic Channeling</ion-title>
+>>>>>>> madura
               </ion-toolbar>
             </ion-header>
           </ion-col>
@@ -98,7 +102,6 @@
         </ion-row>
       </ion-grid>
     </ion-content>
-    <Footer />
   </ion-page>
 </template>
 
@@ -128,7 +131,11 @@ import {
   IonSelect,
   IonSelectOption,
 } from "@ionic/vue";
+<<<<<<< HEAD
 import Footer from "@/views/components/footer.vue";
+=======
+
+>>>>>>> madura
 export default {
   components: {
     IonPage,
@@ -154,16 +161,16 @@ export default {
     IonItem,
     IonSelect,
     IonSelectOption,
-    Footer,
   },
   methods: {
-    setup() {
+  },
+
+      setup() {
       const router = useRouter();
       return {
         router,
       };
     },
-  },
 };
 </script>
 

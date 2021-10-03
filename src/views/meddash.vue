@@ -10,6 +10,7 @@
     </ion-header>
     <br />
     <ion-content class="background-image" no-scroll padding>
+    <Logo />
       <ion-card>
         <ion-card-header>
           <Br /><ion-title>Prescription Details</ion-title>
@@ -121,11 +122,13 @@
         </ion-tab-button>
       </ion-tab-bar>
     </ion-tabs>
+    <Footer />
   </ion-page>
 </template>
 <script>
 import { homeOutline } from "ionicons/icons";
 import { useRouter } from "vue-router";
+
 import {
   IonPage,
   IonContent,
@@ -143,6 +146,8 @@ import {
   IonRow,
   IonTitle,
 } from "@ionic/vue";
+import Logo from "@/views/components/logo_sm.vue";
+import Footer from "@/views/components/footer.vue"; 
 
 export default {
   components: {
@@ -161,6 +166,8 @@ export default {
     IonCol,
     IonRow,
     IonTitle,
+    Logo,
+    Footer,
   },
   methods: {
     NextRoute1() {

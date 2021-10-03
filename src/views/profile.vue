@@ -7,10 +7,7 @@
             <ion-header :translucent="true">
               <ion-toolbar color="light">
                 <ion-buttons slot="start">
-                  <ion-back-button
-                    text=""
-                    default-href="/"
-                  ></ion-back-button>
+                  <ion-back-button text="" default-href="/"></ion-back-button>
                 </ion-buttons>
                 <ion-title> E-Channeling</ion-title>
               </ion-toolbar>
@@ -137,6 +134,11 @@
                 </ion-list>
                 <BR />
 
+                <ion-button
+                  expand="block"
+                  @click="() => router.push('/menu')"
+                  >Channel</ion-button
+                >
                 <ion-button expand="block">Channel</ion-button>
                 <Br />
               </ion-card-content>
@@ -146,8 +148,7 @@
       </ion-grid>
     </ion-content>
 
-          <Footer />
-
+    <Footer />
   </ion-page>
 </template>
 
@@ -162,8 +163,16 @@ import {
   IonCardHeader,
   IonCardSubtitle,
   IonToolbar,
+  IonGrid,
+  IonCardTitle,
+  IonText,
+  IonList,
+  IonSelect,
+  IonSelectOption,
+  IonItem,
+  IonButton,
 } from "@ionic/vue";
-import Footer from '@/views/components/footer.vue';
+import Footer from "@/views/components/footer.vue";
 
 export default {
   components: {
@@ -177,8 +186,18 @@ export default {
     IonCardSubtitle,
     IonToolbar,
     Footer,
+    IonGrid,
+    IonCardTitle,
+    IonText,
+    IonList,
+    IonSelect,
+    IonSelectOption,
+    IonItem,
+    IonButton,
   },
 };
+
+
 </script>
 
 <style>
