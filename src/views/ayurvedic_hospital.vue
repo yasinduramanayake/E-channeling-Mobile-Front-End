@@ -7,14 +7,13 @@
             <ion-header :translucent="true">
               <ion-toolbar color="light">
                 <ion-buttons slot="start">
-                  <ion-back-button text="" default-href="/"></ion-back-button>
+                  <ion-back-button text="" ></ion-back-button>
                 </ion-buttons>
-                <ion-title>Ayurvedic Hospital Channeling</ion-title>
+                <ion-title>Private Hospital Channeling</ion-title>
               </ion-toolbar>
             </ion-header>
           </ion-col>
         </ion-row>
-
         <ion-row>
           <ion-col>
             <img class="logo" src="assets/echannelling.png" />
@@ -111,6 +110,7 @@ import {
   IonCard,
   IonInput,
   IonGrid,
+  IonButtons,
   IonRow,
   IonCol,
   IonToolbar,
@@ -128,17 +128,19 @@ import {
   IonSelect,
   IonSelectOption,
 } from "@ionic/vue";
-import Footer from '@/views/components/footer.vue';
+import Footer from "@/views/components/footer.vue";
 export default {
   components: {
     IonPage,
     IonContent,
     IonCard,
     IonGrid,
+    IonButtons,
     IonInput,
     IonRow,
     IonCol,
     IonToolbar,
+
     IonButton,
     IonBackButton,
     IonHeader,

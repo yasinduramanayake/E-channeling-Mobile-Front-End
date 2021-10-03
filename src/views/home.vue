@@ -59,7 +59,7 @@ export default {
     IonCol,
   },
 
-   setup() {
+  setup() {
     const router = useRouter();
     return {
       router,

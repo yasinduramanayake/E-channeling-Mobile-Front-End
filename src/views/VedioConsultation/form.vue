@@ -8,13 +8,14 @@
         <ion-title style="padding-left:70px">Video Consultation</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content><Br />
+    <ion-content
+      ><Br />
       <Logo />
-                  <div class="img">
-                    <img src="assets/video.png" />
-                  </div>
-                  <Br />
-                  <br /><br />
+      <div class="img">
+        <img src="assets/video.png" />
+      </div>
+      <Br />
+      <br /><br />
       <ion-item>
         <ion-label position="stacked">Select The Hospital</ion-label>
         <ion-select placeholder="Select One">
@@ -120,7 +121,7 @@ export default {
   padding-left: 5%;
   padding-right: 5%;
 }
-.img{
+.img {
   padding-left: 15%;
   padding-right: 15%;
 }

@@ -152,15 +152,14 @@ export default {
     IonSelect,
     IonSelectOption,
   },
-  methods: {
-  },
+  methods: {},
 
-      setup() {
-      const router = useRouter();
-      return {
-        router,
-      };
-    },
+  setup() {
+    const router = useRouter();
+    return {
+      router,
+    };
+  },
 };
 </script>
 

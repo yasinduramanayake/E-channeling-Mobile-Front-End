@@ -54,7 +54,7 @@
       <br />
       <br />
       <br />
-      
+
       <ion-text class="signup" color="dark"
         >Don't Have an Account ? SIGN UP</ion-text
       >
