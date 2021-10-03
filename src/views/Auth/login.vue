@@ -79,7 +79,7 @@ import {
 } from "@ionic/vue";
 import login from "@/router/modules/login";
 import { useRouter } from "vue-router";
-import Logo from "@/views/components/logo_sm.vue";
+import Logo from "@/views/components/logo.vue";
 export default {
   name: login,
   components: {

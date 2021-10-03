@@ -9,7 +9,7 @@
                 <ion-buttons slot="start">
                   <ion-back-button text="" default-href="/"></ion-back-button>
                 </ion-buttons>
-                <ion-title>Ayurvedic Hospital Channeling</ion-title>
+                <ion-title>Ayurvedic Channeling</ion-title>
               </ion-toolbar>
             </ion-header>
           </ion-col>
@@ -99,7 +99,6 @@
         </ion-row>
       </ion-grid>
     </ion-content>
-    <Footer />
   </ion-page>
 </template>
 
@@ -128,7 +127,7 @@ import {
   IonSelect,
   IonSelectOption,
 } from "@ionic/vue";
-import Footer from '@/views/components/footer.vue';
+
 export default {
   components: {
     IonPage,
@@ -152,16 +151,16 @@ export default {
     IonItem,
     IonSelect,
     IonSelectOption,
-    Footer,
   },
   methods: {
-    setup() {
+  },
+
+      setup() {
       const router = useRouter();
       return {
         router,
       };
     },
-  },
 };
 </script>
 

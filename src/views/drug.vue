@@ -1,6 +1,7 @@
 <template>
   <ion-page>
     <ion-content class="background-image" no-scroll padding>
+    
       <br />
       <br />
       <br />
@@ -29,10 +30,9 @@
       <ion-col>
         <center>
         <ion-button
-          size="medium"
-          color="danger"
+          color="primary"
           @click="NextRoute('/success')"
-          expand="medium"
+          expand="block"
           > Proceed
         </ion-button>
       </center>

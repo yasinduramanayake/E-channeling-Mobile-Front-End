@@ -9,10 +9,7 @@
       </ion-toolbar>
     </ion-header>
     <ion-content class="background-image" no-scroll padding>
-      <ion-item>
-        <h1 style="padding-left:115px">Register</h1>
-      </ion-item>
-
+<Br />
     <Logo/>
 
      
@@ -39,7 +36,6 @@
         <br />
 
         <ion-button
-          size="large"
           color="primary"
           @click="() => router.push('/login')"
           expand="block"
@@ -47,6 +43,7 @@
         </ion-button>
     
     </ion-content>
+    
   </ion-page>
 </template>
 <script>
@@ -64,8 +61,8 @@ import {
   IonButton,
 } from "@ionic/vue";
 import login from "@/router/modules/login";
-import Logo from '@/views/components/logo.vue';
 import { useRouter } from "vue-router";
+import Logo from "@/views/components/logo.vue"; 
 export default {
   name: login,
   components: {
@@ -80,7 +77,7 @@ export default {
     IonInput,
     IonLabel,
     IonItem,
-    Logo
+    Logo,
   },
 
   setup() {

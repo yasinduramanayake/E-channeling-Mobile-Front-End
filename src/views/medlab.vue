@@ -34,7 +34,7 @@
           <ion-button
             class="btn"
             color="primary"
-            @click="() => router.push('/meddash')"
+            @click="NextRoute1('/meddash')"
             expand="block"
             >CONTINUE
           </ion-button>
@@ -74,6 +74,11 @@ export default {
     IonToolbar,
     IonBackButton,
     IonTitle,
+  },
+ methods: {
+    NextRoute1() {
+      this.$router.push("/meddash");
+    },
   },
   setup() {
     const router = useRouter();
