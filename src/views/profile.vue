@@ -145,7 +145,9 @@
       </ion-grid>
     </ion-content>
 
-    <Footer />
+     <ion-toolbar>
+        <Footer />
+      </ion-toolbar>
   </ion-page>
 </template>
 

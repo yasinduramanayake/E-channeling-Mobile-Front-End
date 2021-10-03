@@ -68,8 +68,11 @@
         expand="block"
         >Proceed
       </ion-button>
+      <br /><br /><br /><br />
 
-      <Footer />
+      <ion-toolbar>
+        <Footer />
+      </ion-toolbar>
     </ion-content>
   </ion-page>
 </template>
