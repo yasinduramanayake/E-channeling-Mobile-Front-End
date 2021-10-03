@@ -1,18 +1,17 @@
 <template>
   <ion-page>
+    <ion-header :translucent="true">
+      <ion-toolbar color="light">
+        <ion-buttons slot="start">
+          <ion-back-button text="" default-href="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title> E-Channeling</ion-title>
+      </ion-toolbar>
+    </ion-header>
     <ion-content>
       <ion-grid>
         <ion-row>
-          <ion-col>
-            <ion-header :translucent="true">
-              <ion-toolbar color="light">
-                <ion-buttons slot="start">
-                  <ion-back-button text="" default-href="/"></ion-back-button>
-                </ion-buttons>
-                <ion-title> E-Channeling</ion-title>
-              </ion-toolbar>
-            </ion-header>
-          </ion-col>
+          <ion-col> </ion-col>
         </ion-row>
 
         <ion-row>
@@ -27,7 +26,7 @@
               <ion-card-header>
                 <ion-card-title>Private Hospital</ion-card-title>
                 <ion-card-subtitle>Doctor Channeling</ion-card-subtitle>
-                <Br />
+                <br />
               </ion-card-header>
 
               <ion-card-content>
@@ -36,7 +35,7 @@
                 </ion-text>
                 <ion-label color="primary">Dr. Ananda Wijewickrama</ion-label
                 ><br />
-                <Br />
+                <br />
                 <ion-list>
                   <ion-text color="dark">
                     <h2>Specialization:</h2>
@@ -44,7 +43,7 @@
                     ><br />
                   </ion-text>
                 </ion-list>
-                <Br />
+                <br />
               </ion-card-content>
             </ion-card>
           </ion-col>
@@ -54,7 +53,7 @@
           <ion-col>
             <ion-card>
               <h2>FEEDBACKS</h2>
-              <Br />
+              <br />
               <ion-badge color="primary">4.8 / 5</ion-badge>
 
               <ion-card-content>
@@ -82,7 +81,7 @@
           <ion-col>
             <ion-card>
               <h2>Channel Your Doctor</h2>
-              <Br />
+              <br />
 
               <ion-card-content>
                 <ion-text color="dark">
@@ -90,7 +89,7 @@
                 </ion-text>
 
                 <br />
-                <Br />
+                <br />
                 <ion-list>
                   <ion-text color="dark">
                     <h2>Session</h2>
@@ -132,15 +131,13 @@
                     </ion-select>
                   </ion-item>
                 </ion-list>
-                <BR />
+                <br />
 
-                <ion-button
-                  expand="block"
-                  @click="() => router.push('/menu')"
+                <ion-button expand="block" @click="() => router.push('/menu')"
                   >Channel</ion-button
                 >
                 <ion-button expand="block">Channel</ion-button>
-                <Br />
+                <br />
               </ion-card-content>
             </ion-card>
           </ion-col>
@@ -156,11 +153,14 @@
 import {
   IonPage,
   IonContent,
+  IonCardContent,
   IonCard,
   IonCol,
   IonRow,
   IonHeader,
+  IonButtons,
   IonCardHeader,
+  IonBackButton,
   IonCardSubtitle,
   IonToolbar,
   IonGrid,
@@ -177,8 +177,11 @@ import Footer from "@/views/components/footer.vue";
 export default {
   components: {
     IonPage,
+    IonButtons,
     IonContent,
+    IonCardContent,
     IonCard,
+    IonBackButton,
     IonCol,
     IonCardHeader,
     IonRow,
@@ -196,8 +199,6 @@ export default {
     IonButton,
   },
 };
-
-
 </script>
 
 <style>

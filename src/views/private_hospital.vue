@@ -1,18 +1,17 @@
 <template>
   <ion-page>
+    <ion-header :translucent="true">
+      <ion-toolbar color="light">
+        <ion-buttons slot="start">
+          <ion-back-button text="" default-href="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Private Hospital Channeling</ion-title>
+      </ion-toolbar>
+    </ion-header>
     <ion-content>
       <ion-grid>
         <ion-row>
-          <ion-col>
-            <ion-header :translucent="true">
-              <ion-toolbar color="light">
-                <ion-buttons slot="start">
-                  <ion-back-button text="" default-href="/"></ion-back-button>
-                </ion-buttons>
-                <ion-title>Private Hospital Channeling</ion-title>
-              </ion-toolbar>
-            </ion-header>
-          </ion-col>
+          <ion-col> </ion-col>
         </ion-row>
 
         <ion-row>

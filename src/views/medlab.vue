@@ -24,20 +24,13 @@
       <div class="txt2">
         <ion-text>"Your Health Companian"</ion-text>
       </div>
-      <br />
-      <br />
+     
       <br />
       <br />
       <br />
       <ion-row>
         <ion-col>
-          <ion-button
-            class="btn"
-            color="primary"
-            @click="NextRoute1('/meddash')"
-            expand="block"
-            >CONTINUE
-          </ion-button>
+         <ion-button expand="block" @click="NextRoute1()">CONTINUE</ion-button>
         </ion-col>
       </ion-row>
     </ion-content>
@@ -48,8 +41,10 @@
 import {
   IonPage,
   IonContent,
+  IonButtons,
   IonButton,
   IonCol,
+  IonText,
   IonRow,
   IonHeader,
   IonToolbar,
@@ -65,10 +60,12 @@ export default {
   components: {
     IonPage,
     IonCol,
+     IonButtons,
     IonRow,
     IonContent,
     IonButton,
     Logo,
+     IonText,
     Footer,
     IonHeader,
     IonToolbar,
