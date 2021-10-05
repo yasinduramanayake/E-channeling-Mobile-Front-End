@@ -134,4 +134,5 @@ export default {
   font-size: medium;
   font-weight: bold;
 }
+
 </style>

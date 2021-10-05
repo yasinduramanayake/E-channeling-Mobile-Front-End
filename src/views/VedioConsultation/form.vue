@@ -13,7 +13,7 @@
                   <div class="img">
                     <img src="assets/video.png" />
                   </div>
-                  <Br />
+                  <br />
                   <br /><br />
       <ion-item>
         <ion-label position="stacked">Select The Hospital</ion-label>
@@ -59,6 +59,7 @@
           <ion-select-option value="f">Dr.J.M Gunawaradena</ion-select-option>
         </ion-select>
       </ion-item>
+      <br /><br /><br /><br />
       <br /><br /><br /><br />
       <ion-button
         class="btn"
