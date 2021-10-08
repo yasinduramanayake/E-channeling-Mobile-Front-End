@@ -62,7 +62,7 @@
         </ion-select>
       </ion-item>
       <br /><br /><br /><br />
-      <br /><br /><br /><br />
+   
       <ion-button
         class="btn"
         color="tertiary"
@@ -122,10 +122,7 @@ export default {
 };
 </script>
 <style scoped>
-.btn {
-  padding-left: 5%;
-  padding-right: 5%;
-}
+
 .img {
   padding-left: 15%;
   padding-right: 15%;

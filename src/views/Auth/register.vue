@@ -34,22 +34,12 @@
       <br />
       <br />
 
-<<<<<<< HEAD
       <ion-button
         color="primary"
-        @click="() => router.push('/login')"
+        @click="() => router.push('/menu')"
         expand="block"
         >Register
       </ion-button>
-=======
-        <ion-button
-          color="primary"
-          @click="() => router.push('/menu')"
-          expand="block"
-          >Register
-        </ion-button>
-    
->>>>>>> madura
     </ion-content>
   </ion-page>
 </template>

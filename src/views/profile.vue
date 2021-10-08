@@ -142,11 +142,6 @@
                 <ion-button color="tertiary" expand="block" @click="() => router.push('/paymeth')"
                   >Channel</ion-button
                 >
-<<<<<<< HEAD
-
-                <br />
-=======
->>>>>>> madura
               </ion-card-content>
             </ion-card>
           </ion-col>
@@ -185,7 +180,6 @@ import {
   IonButton,
 } from "@ionic/vue";
 import Footer from "@/views/components/footer.vue";
-import { useRouter } from "vue-router";
 
 export default {
   components: {
@@ -211,11 +205,7 @@ export default {
     IonItem,
     IonButton,
   },
-<<<<<<< HEAD
-  setup() {
-=======
     setup() {
->>>>>>> madura
     const router = useRouter();
     return {
       router,

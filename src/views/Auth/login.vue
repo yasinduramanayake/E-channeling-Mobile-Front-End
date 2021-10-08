@@ -42,10 +42,6 @@
         >SIGN IN
       </ion-button>
 
-<<<<<<< HEAD
-      <br />
-
-=======
       <ion-row> </ion-row>
       <br />
       <br />
@@ -53,7 +49,6 @@
       <br />
       <br />
       <br />
->>>>>>> madura
       <br />
       <br />
 

@@ -37,19 +37,6 @@
       <h1>Medical Lab</h1>
       Your Health Companian
       <br />
-<<<<<<< HEAD
-      <ion-row>
-        <ion-col>
-          <ion-button
-            size="large"
-            color="danger"
-            @click="NextRoute('/paymeth')"
-            expand="full"
-            >Delete
-          </ion-button>
-        </ion-col>
-      </ion-row>
-=======
     <ion-row>
       <ion-col>
         <ion-button
@@ -60,7 +47,6 @@
         </ion-button>
       </ion-col>
     </ion-row>
->>>>>>> madura
     </ion-content>
   </ion-page>
 </template>
