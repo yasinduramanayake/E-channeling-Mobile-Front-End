@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar color="light">
+      <ion-toolbar color='tertiary'>
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
@@ -52,9 +52,13 @@
         <ion-row>
           <ion-col>
             <ion-card>
-              <h2>FEEDBACKS</h2>
+              <div class="title">
+              
+                  <ion-col><h2>REVIEWS</h2></ion-col>
+                   <ion-badge color="primary">4.8 / 5</ion-badge>
+
+              </div>
               <br />
-              <ion-badge color="primary">4.8 / 5</ion-badge>
 
               <ion-card-content>
                 <ion-text color="dark">
@@ -80,7 +84,9 @@
         <ion-row>
           <ion-col>
             <ion-card>
-              <h2>Channel Your Doctor</h2>
+              <div class="title">
+                <h2>Channel Your Doctor</h2>
+              </div>
               <br />
 
               <ion-card-content>
@@ -133,11 +139,14 @@
                 </ion-list>
                 <br />
 
-                <ion-button expand="block" @click="() => router.push('/menu')"
+                <ion-button color="tertiary" expand="block" @click="() => router.push('/paymeth')"
                   >Channel</ion-button
                 >
+<<<<<<< HEAD
 
                 <br />
+=======
+>>>>>>> madura
               </ion-card-content>
             </ion-card>
           </ion-col>
@@ -152,6 +161,7 @@
 </template>
 
 <script>
+import { useRouter } from "vue-router";
 import {
   IonPage,
   IonContent,
@@ -201,7 +211,11 @@ export default {
     IonItem,
     IonButton,
   },
+<<<<<<< HEAD
   setup() {
+=======
+    setup() {
+>>>>>>> madura
     const router = useRouter();
     return {
       router,
@@ -228,5 +242,14 @@ ion-input {
   /* height: 10%; */
   max-width: 100vw;
   max-height: 10vh;
+}
+.title {
+  padding-left: 5%;
+}
+.toolbar{
+  background-color: rgb(159, 143, 252);
+}
+.btn{
+  background-color: rgb(159, 143, 252);
 }
 </style>

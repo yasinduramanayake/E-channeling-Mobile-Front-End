@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar color="light">
+      <ion-toolbar color="tertiary">
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
@@ -11,11 +11,12 @@
     <ion-content
       ><Br />
       <Logo />
-      <div class="img">
-        <img src="assets/video.png" />
-      </div>
-      <Br />
-      <br /><br />
+                  <div class="img">
+                    <img src="assets/video.png" />
+                  </div>
+                  <br />
+                  <br /><br />
+      
       <ion-item>
         <ion-label position="stacked">Select The Hospital</ion-label>
         <ion-select placeholder="Select One">
@@ -61,9 +62,10 @@
         </ion-select>
       </ion-item>
       <br /><br /><br /><br />
+      <br /><br /><br /><br />
       <ion-button
         class="btn"
-        color="primary"
+        color="tertiary"
         @click="() => router.push('/menu')"
         expand="block"
         >Proceed

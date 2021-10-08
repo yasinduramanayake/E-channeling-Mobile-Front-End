@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar color="light">
+      <ion-toolbar color="tertiary">
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
@@ -24,9 +24,8 @@
                     <img src="assets/presc.jpg" />
                   </div>
                 </center>
-                <ion-button
-                  class="btn"
-                  color="primary"
+                <ion-button class="btn"
+                  color="tertiary"
                   @click="NextRoute1('/prescription')"
                   expand="block"
                   >Add Prescription Details
@@ -50,9 +49,14 @@
                     <img src="assets/labtest.jpg" />
                   </div>
                 </center>
+<<<<<<< HEAD
                 <ion-button
                   class="btn"
                   color="primary"
+=======
+                <ion-button class="btn"
+                  color="tertiary"
+>>>>>>> madura
                   @click="NextRoute2('/labtest')"
                   expand="block"
                   >Add Labtest Details
@@ -76,9 +80,14 @@
                     <img src="assets/dtot.jpg" />
                   </div>
                 </center>
+<<<<<<< HEAD
                 <ion-button
                   class="btn"
                   color="primary"
+=======
+                <ion-button class="btn"
+                  color="tertiary"
+>>>>>>> madura
                   @click="NextRoute3('/drug')"
                   expand="block"
                   >Drugs to Deliver
@@ -102,9 +111,14 @@
                     <img src="assets/pay.jpg" />
                   </div>
                 </center>
+<<<<<<< HEAD
                 <ion-button
                   class="btn"
                   color="primary"
+=======
+                <ion-button class="btn"
+                  color="tertiary"
+>>>>>>> madura
                   @click="NextRoute4('/paymeth')"
                   expand="block"
                   >Payment Details

@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar color="light">
+      <ion-toolbar color="tertiary">
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
@@ -87,7 +87,8 @@
 
                 <ion-button
                   expand="block"
-                  @click="() => router.push('/profile')"
+                  color="tertiary"
+                  @click="() => router.push('/list')"
                   >Search</ion-button
                 >
                 <BR />
@@ -102,6 +103,7 @@
 </template>
 
 <script>
+
 import { useRouter } from "vue-router";
 import {
   IonPage,

@@ -14,6 +14,16 @@ export default [
   },
 
   {
+    path: '/list',
+    component: () => import('@/views/private_doctor_list.vue'),
+  },
+
+  {
+    path: '/list2',
+    component: () => import('@/views/ayurvedic_list.vue'),
+  },
+
+  {
     path: '/register',
     component: () => import('@/views/Auth/register.vue'),
   },
@@ -26,12 +36,6 @@ export default [
   {
     path: '/channel2',
     component: () => import('@/views/ayurvedic_hospital.vue'),
-  },
-
-  
-  {
-    path: '/privateList',
-    component: () => import('@/views/private_doctor_list.vue'),
   },
 
   {

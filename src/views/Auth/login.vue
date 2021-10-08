@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar color="light">
+      <ion-toolbar color="tertiary">
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
@@ -36,18 +36,28 @@
 
       <ion-button
         class="btn"
-        color="primary"
+        color="tertiary"
         @click="NextRoute1('/menu')"
         expand="block"
         >SIGN IN
       </ion-button>
 
+<<<<<<< HEAD
       <br />
 
+=======
+      <ion-row> </ion-row>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+>>>>>>> madura
       <br />
       <br />
 
-      <ion-text class="signup" color="dark"
+      <ion-text class="signup" color="tertiary"
         >Don't Have an Account ? SIGN UP</ion-text
       >
     </ion-content>

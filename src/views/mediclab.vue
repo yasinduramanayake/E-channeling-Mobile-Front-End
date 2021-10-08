@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar color="light">
+      <ion-toolbar color="tertiary">
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
@@ -28,7 +28,7 @@
       <br />
       <ion-row>
         <ion-col>
-          <ion-button expand="block" @click="NextRoute1()">CONTINUE</ion-button>
+          <ion-button expand="block" color="tertiary" @click="NextRoute1()">CONTINUE</ion-button>
         </ion-col>
       </ion-row>
 

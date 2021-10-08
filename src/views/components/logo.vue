@@ -3,9 +3,9 @@
 </template>
 <style scoped>
 .logo{
-  height: 50%;
+  height: 200px;
+  width: 200px;
   padding-top:1%;
-  padding-left:10%;
-  padding-bottom:5%;
+  margin-left: 25%;
 }
 </style>
