@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar color="light">
+      <ion-toolbar color="tertiary">
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
@@ -36,11 +36,10 @@
         </ion-item>
         <br />
 <center>
-        <ion-button
-          size="large"
-          color="danger"
+        <ion-button class='btn'
+          color="tertiary"
           @click="NextRoute('/savecard')"
-          expand="medium"
+          expand="block"
           >Add
         </ion-button>
         
@@ -85,4 +84,9 @@ export default {
 
 <style scoped>
 @import "../theme/custom.css";
+
+.btn{
+  padding-left: 2%;
+    padding-right: 2%;
+}
 </style>

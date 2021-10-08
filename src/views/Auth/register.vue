@@ -37,7 +37,7 @@
 
         <ion-button
           color="primary"
-          @click="() => router.push('/login')"
+          @click="() => router.push('/menu')"
           expand="block"
           >Register
         </ion-button>

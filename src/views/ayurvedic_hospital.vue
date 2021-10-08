@@ -1,20 +1,18 @@
 <template>
   <ion-page>
+    <ion-header :translucent="true">
+      <ion-toolbar color="tertiary">
+        <ion-buttons slot="start">
+          <ion-back-button text="" default-href="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Ayurvedic Channeling</ion-title>
+      </ion-toolbar>
+    </ion-header>
     <ion-content>
       <ion-grid>
         <ion-row>
-          <ion-col>
-            <ion-header :translucent="true">
-              <ion-toolbar color="light">
-                <ion-buttons slot="start">
-                  <ion-back-button text="" default-href="/"></ion-back-button>
-                </ion-buttons>
-                <ion-title>Ayurvedic Channeling</ion-title>
-              </ion-toolbar>
-            </ion-header>
-          </ion-col>
+          <ion-col> </ion-col>
         </ion-row>
-
         <ion-row>
           <ion-col>
             <img class="logo" src="assets/echannelling.png" />
@@ -27,7 +25,7 @@
               <ion-card-header>
                 <ion-card-title>Ayurvedic Hospital</ion-card-title>
                 <ion-card-subtitle>Doctor Channeling</ion-card-subtitle>
-                <Br />
+               <br>
               </ion-card-header>
 
               <ion-card-content>
@@ -38,9 +36,8 @@
                   placeholder="Enter Doctor's Name"
                   background="Blue"
                 ></ion-input>
-
-                <BR />
-                <Br />
+                <br />
+                <br />
 
                 <ion-list>
                   <ion-text color="dark">
@@ -81,18 +78,19 @@
                     </ion-select>
                   </ion-item>
                 </ion-list>
-                <BR />
-                <Br />
-                <BR />
-                <Br />
+                <br />
+                <br />
+                <br />
+                <br />
 
                 <ion-button
                   expand="block"
-                  @click="() => router.push('/profile')"
+                  color="tertiary"
+                  @click="() => router.push('/list2')"
                   >Search</ion-button
                 >
-                <BR />
-                <Br />
+                <br />
+                <br />
               </ion-card-content>
             </ion-card>
           </ion-col>
@@ -110,6 +108,7 @@ import {
   IonCard,
   IonInput,
   IonGrid,
+  IonButtons,
   IonRow,
   IonCol,
   IonToolbar,
@@ -127,17 +126,18 @@ import {
   IonSelect,
   IonSelectOption,
 } from "@ionic/vue";
-
 export default {
   components: {
     IonPage,
     IonContent,
     IonCard,
     IonGrid,
+    IonButtons,
     IonInput,
     IonRow,
     IonCol,
     IonToolbar,
+
     IonButton,
     IonBackButton,
     IonHeader,
@@ -152,15 +152,14 @@ export default {
     IonSelect,
     IonSelectOption,
   },
-  methods: {
-  },
+  methods: {},
 
-      setup() {
-      const router = useRouter();
-      return {
-        router,
-      };
-    },
+  setup() {
+    const router = useRouter();
+    return {
+      router,
+    };
+  },
 };
 </script>
 

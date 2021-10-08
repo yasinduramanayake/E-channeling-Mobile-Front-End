@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar color="light">
+      <ion-toolbar color="tertiary">
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
@@ -25,7 +25,7 @@
                   </div>
                 </center>
                 <ion-button class="btn"
-                  color="primary"
+                  color="tertiary"
                   @click="NextRoute1('/prescription')"
                   expand="block"
                   >Add Prescription Details
@@ -50,7 +50,7 @@
                   </div>
                 </center>
                 <ion-button class="btn"
-                  color="primary"
+                  color="tertiary"
                   @click="NextRoute2('/labtest')"
                   expand="block"
                   >Add Labtest Details
@@ -75,7 +75,7 @@
                   </div>
                 </center>
                 <ion-button class="btn"
-                  color="primary"
+                  color="tertiary"
                   @click="NextRoute3('/drug')"
                   expand="block"
                   >Drugs to Deliver
@@ -100,7 +100,7 @@
                   </div>
                 </center>
                 <ion-button class="btn"
-                  color="primary"
+                  color="tertiary"
                   @click="NextRoute4('/paymeth')"
                   expand="block"
                   >Payment Details

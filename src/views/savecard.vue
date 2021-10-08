@@ -22,10 +22,9 @@
     <ion-row>
       <ion-col>
         <ion-button
-          size="large"
-          color="danger"
+          color="tertiary"
           @click="NextRoute('/paymeth')"
-          expand="full"
+          expand="block"
           >Delete
         </ion-button>
       </ion-col>
@@ -41,10 +40,9 @@
     <ion-row>
       <ion-col>
         <ion-button
-          size="large"
-          color="danger"
+          color="tertiary"
           @click="NextRoute('/paymeth')"
-          expand="full"
+          expand="block"
           >Delete
         </ion-button>
       </ion-col>

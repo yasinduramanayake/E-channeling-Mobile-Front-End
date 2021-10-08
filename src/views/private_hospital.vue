@@ -1,18 +1,17 @@
 <template>
   <ion-page>
+    <ion-header :translucent="true">
+      <ion-toolbar color="tertiary">
+        <ion-buttons slot="start">
+          <ion-back-button text="" default-href="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Private Hospital Channeling</ion-title>
+      </ion-toolbar>
+    </ion-header>
     <ion-content>
       <ion-grid>
         <ion-row>
-          <ion-col>
-            <ion-header :translucent="true">
-              <ion-toolbar color="light">
-                <ion-buttons slot="start">
-                  <ion-back-button text="" default-href="/"></ion-back-button>
-                </ion-buttons>
-                <ion-title>Private Hospital Channeling</ion-title>
-              </ion-toolbar>
-            </ion-header>
-          </ion-col>
+          <ion-col> </ion-col>
         </ion-row>
 
         <ion-row>
@@ -88,7 +87,8 @@
 
                 <ion-button
                   expand="block"
-                  @click="() => router.push('/profile')"
+                  color="tertiary"
+                  @click="() => router.push('/list')"
                   >Search</ion-button
                 >
                 <BR />
@@ -103,6 +103,7 @@
 </template>
 
 <script>
+
 import { useRouter } from "vue-router";
 import {
   IonPage,
@@ -152,15 +153,14 @@ export default {
     IonSelect,
     IonSelectOption,
   },
-  methods: {
-  },
+  methods: {},
 
-      setup() {
-      const router = useRouter();
-      return {
-        router,
-      };
-    },
+  setup() {
+    const router = useRouter();
+    return {
+      router,
+    };
+  },
 };
 </script>
 

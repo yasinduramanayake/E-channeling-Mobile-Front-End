@@ -5,27 +5,27 @@
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
-        <ion-title>Private Channeling</ion-title>
+        <ion-title>Ayurvedic Channeling</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
       <ion-grid>
         <ion-row>
           <ion-col>
+            <br />
             <Logo />
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col>
-            <ion-text class="txt" color="medium">General Physicians</ion-text>
-
-            <br /><br />
+                      <ion-text class="txt" color="medium">Ayurvedic Gasteritis Doctors</ion-text>
+                      <br />
             <ion-list>
               <ion-item>
                 <ion-row>
                   <ion-col size="3">
                     <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d2.jpg" />
+                      <img src="assets/d3.jpg" />
                     </ion-thumbnail>
                   </ion-col>
                   <ion-col size="8">
@@ -48,7 +48,7 @@
                 <ion-row>
                   <ion-col size="3">
                     <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d2.jpg" />
+                      <img src="assets/d5.jpg" />
                     </ion-thumbnail>
                   </ion-col>
                   <ion-col size="8">
@@ -71,7 +71,7 @@
                 <ion-row>
                   <ion-col size="3">
                     <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d2.jpg" />
+                      <img src="assets/d3.jpg" />
                     </ion-thumbnail>
                   </ion-col>
                   <ion-col size="8" size-lg>
@@ -94,7 +94,7 @@
                 <ion-row>
                   <ion-col size="3">
                     <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d2.jpg" />
+                      <img src="assets/d5.jpg" />
                     </ion-thumbnail>
                   </ion-col>
                   <ion-col size="8" size-lg>
@@ -140,7 +140,7 @@
                 <ion-row>
                   <ion-col size="3">
                     <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d2.jpg" />
+                      <img src="assets/d3.jpg" />
                     </ion-thumbnail>
                   </ion-col>
                   <ion-col size="8" size-lg>
@@ -185,7 +185,7 @@
                 <ion-row>
                   <ion-col size="3">
                     <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d2.jpg" />
+                      <img src="assets/d5.jpg" />
                     </ion-thumbnail>
                   </ion-col>
                   <ion-col size="8" size-lg>
@@ -229,7 +229,7 @@
                 <ion-row>
                   <ion-col size="3">
                     <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d2.jpg" />
+                      <img src="assets/d5.jpg" />
                     </ion-thumbnail>
                   </ion-col>
                   <ion-col size="8" size-lg>
@@ -252,7 +252,7 @@
         </ion-row>
       </ion-grid>
       <ion-toolbar>
-        <Footer />
+      <Footer />
       </ion-toolbar>
     </ion-content>
   </ion-page>
@@ -316,7 +316,6 @@ export default {
   width: 65px;
   margin-top: 60%;
 }
-
 .txt {
   margin-left: 8%;
   font-size: 1.2rem;

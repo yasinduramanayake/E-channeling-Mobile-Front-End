@@ -1,20 +1,22 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar color="light">
+      <ion-toolbar color="tertiary">
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
         <ion-title style="padding-left:70px">Video Consultation</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content><Br />
+    <ion-content
+      ><Br />
       <Logo />
                   <div class="img">
                     <img src="assets/video.png" />
                   </div>
                   <br />
                   <br /><br />
+      
       <ion-item>
         <ion-label position="stacked">Select The Hospital</ion-label>
         <ion-select placeholder="Select One">
@@ -63,13 +65,16 @@
       <br /><br /><br /><br />
       <ion-button
         class="btn"
-        color="primary"
+        color="tertiary"
         @click="() => router.push('/menu')"
         expand="block"
         >Proceed
       </ion-button>
+      <br /><br /><br /><br />
 
-      <Footer />
+      <ion-toolbar>
+        <Footer />
+      </ion-toolbar>
     </ion-content>
   </ion-page>
 </template>
@@ -121,7 +126,7 @@ export default {
   padding-left: 5%;
   padding-right: 5%;
 }
-.img{
+.img {
   padding-left: 15%;
   padding-right: 15%;
 }

@@ -27,8 +27,7 @@
     <ion-row>
       <ion-col>
         <ion-button
-          size="large"
-          color="primary"
+          color="tertiary"
           @click="() => router.push('/login')"
           expand="block"
           >Login
@@ -38,8 +37,7 @@
     <ion-row>
       <ion-col>
         <ion-button
-          size="large"
-          color="primary"
+          color="tertiary"
           @click="() => router.push('/register')"
           expand="block"
           >Register
@@ -59,7 +57,7 @@ export default {
     IonCol,
   },
 
-   setup() {
+  setup() {
     const router = useRouter();
     return {
       router,

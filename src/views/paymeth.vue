@@ -1,7 +1,7 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar color="light">
+      <ion-toolbar color="tertiary">
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/meddash"></ion-back-button>
         </ion-buttons>
@@ -18,8 +18,7 @@
           </center>
           <center>
             <ion-button
-              class="btn"
-              color="primary"
+              color="tertiary"
               @click="NextRoute1('/visa')"
               expand="block"
               >visa
@@ -38,8 +37,7 @@
           <br />
           <center>
             <ion-button
-              class="btn"
-              color="primary"
+              color="tertiary"
               @click="NextRoute2('/master')"
               expand="block"
               >Master
@@ -55,8 +53,7 @@
           <br />
           <center>
             <ion-button
-              class="btn"
-              color="primary"
+              color="tertiary"
               @click="NextRoute3('/savecard')"
               expand="block"
               >Saved cards Details
