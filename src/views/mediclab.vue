@@ -32,10 +32,11 @@
         </ion-col>
       </ion-row>
 
-       <ion-toolbar>
+     
+    </ion-content>
+     <ion-toolbar>
         <Footer />
       </ion-toolbar>
-    </ion-content>
   </ion-page>
 </template>
 <script>
@@ -85,3 +86,26 @@ export default {
   },
 };
 </script>
+<style scoped>
+@import "../theme/custom.css";
+
+.txt1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.txt2 {
+  margin-top: 1%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+.btn {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+</style>

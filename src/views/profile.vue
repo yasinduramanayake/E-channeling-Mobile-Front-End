@@ -5,7 +5,7 @@
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
-        <ion-title> E-Channeling</ion-title>
+        <ion-title style="padding-left:70px"> E-Channeling</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
@@ -136,7 +136,7 @@
                 <ion-button expand="block" @click="() => router.push('/menu')"
                   >Channel</ion-button
                 >
-                <ion-button expand="block">Channel</ion-button>
+
                 <br />
               </ion-card-content>
             </ion-card>
@@ -145,9 +145,9 @@
       </ion-grid>
     </ion-content>
 
-     <ion-toolbar>
-        <Footer />
-      </ion-toolbar>
+    <ion-toolbar>
+      <Footer />
+    </ion-toolbar>
   </ion-page>
 </template>
 
@@ -175,6 +175,7 @@ import {
   IonButton,
 } from "@ionic/vue";
 import Footer from "@/views/components/footer.vue";
+import { useRouter } from "vue-router";
 
 export default {
   components: {
@@ -199,6 +200,12 @@ export default {
     IonSelectOption,
     IonItem,
     IonButton,
+  },
+  setup() {
+    const router = useRouter();
+    return {
+      router,
+    };
   },
 };
 </script>

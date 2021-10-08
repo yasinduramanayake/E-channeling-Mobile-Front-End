@@ -5,11 +5,11 @@
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
-        <ion-title>E-channeling</ion-title>
+        <ion-title style="padding-left:70px">E-channeling</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="background-image">
-<Logo />
+      <Logo />
 
       <div style="padding-top:20px">
         <ion-item>
@@ -23,7 +23,7 @@
           <ion-input placeholder="Your Area"></ion-input>
         </ion-item>
         <br />
-      
+
         <ion-item>
           <ion-label position="stacked">Pharmacy Name</ion-label>
           <ion-input placeholder="Pharmacy Name"></ion-input>
@@ -41,7 +41,8 @@
         </ion-item>
         <br />
 
-        <ion-button class="btn_main"
+        <ion-button
+          class="btn_main"
           color="primary"
           @click="NextRoute('/meddash')"
           expand="block"
@@ -49,7 +50,9 @@
         </ion-button>
       </div>
     </ion-content>
-    <Footer />
+    <ion-toolbar>
+      <Footer />
+    </ion-toolbar>
   </ion-page>
 </template>
 <script>
@@ -95,8 +98,8 @@ export default {
 <style scoped>
 @import "../theme/custom.css";
 
-.btn_main{
-padding-left: 5%;
-padding-right: 5%;
+.btn_main {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 </style>

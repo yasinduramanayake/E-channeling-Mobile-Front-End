@@ -5,12 +5,12 @@
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
-        <ion-title>Medical Lab</ion-title>
+        <ion-title style="padding-left:70px">Medical Lab</ion-title>
       </ion-toolbar>
     </ion-header>
     <br />
     <ion-content class="background-image" no-scroll padding>
-    <Logo />
+      <Logo />
       <ion-card>
         <ion-card-header>
           <Br /><ion-title>Prescription Details</ion-title>
@@ -24,7 +24,8 @@
                     <img src="assets/presc.jpg" />
                   </div>
                 </center>
-                <ion-button class="btn"
+                <ion-button
+                  class="btn"
                   color="primary"
                   @click="NextRoute1('/prescription')"
                   expand="block"
@@ -49,7 +50,8 @@
                     <img src="assets/labtest.jpg" />
                   </div>
                 </center>
-                <ion-button class="btn"
+                <ion-button
+                  class="btn"
                   color="primary"
                   @click="NextRoute2('/labtest')"
                   expand="block"
@@ -74,7 +76,8 @@
                     <img src="assets/dtot.jpg" />
                   </div>
                 </center>
-                <ion-button class="btn"
+                <ion-button
+                  class="btn"
                   color="primary"
                   @click="NextRoute3('/drug')"
                   expand="block"
@@ -99,7 +102,8 @@
                     <img src="assets/pay.jpg" />
                   </div>
                 </center>
-                <ion-button class="btn"
+                <ion-button
+                  class="btn"
                   color="primary"
                   @click="NextRoute4('/paymeth')"
                   expand="block"
@@ -112,29 +116,18 @@
       </ion-card>
     </ion-content>
 
-    <ion-tabs
-      @ionTabsWillChange="beforeTabChange"
-      @ionTabsDidChange="afterTabChange"
-    >
-      <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="speakers" href="/menu">
-          <ion-icon :icon="homeOutline"></ion-icon>
-        </ion-tab-button>
-      </ion-tab-bar>
-    </ion-tabs>
-    <Footer />
+    <ion-toolbar>
+      <Footer />
+    </ion-toolbar>
   </ion-page>
 </template>
 <script>
 import { homeOutline } from "ionicons/icons";
 import { useRouter } from "vue-router";
-
 import {
   IonPage,
   IonContent,
   IonButton,
-  IonTabBar,
-  IonTabButton,
   IonHeader,
   IonToolbar,
   IonBackButton,
@@ -147,15 +140,13 @@ import {
   IonTitle,
 } from "@ionic/vue";
 import Logo from "@/views/components/logo_sm.vue";
-import Footer from "@/views/components/footer.vue"; 
+import Footer from "@/views/components/footer.vue";
 
 export default {
   components: {
     IonPage,
     IonContent,
     IonButton,
-    IonTabBar,
-    IonTabButton,
     IonHeader,
     IonToolbar,
     IonBackButton,

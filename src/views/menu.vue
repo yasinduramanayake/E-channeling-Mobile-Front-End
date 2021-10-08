@@ -5,7 +5,7 @@
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
-      <ion-title style="padding-left:70px">E-channeling</ion-title>
+        <ion-title style="padding-left:70px">E-channeling</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="background-image" no-scroll padding>
@@ -32,9 +32,10 @@
           ></ion-icon>
         </ion-item>
       </div>
-    
-    <Footer/>
     </ion-content>
+    <ion-toolbar>
+      <Footer />
+    </ion-toolbar>
   </ion-page>
 </template>
 <script>
@@ -50,7 +51,7 @@ import {
   IonItem,
   IonLabel,
 } from "@ionic/vue";
-import Footer from "@/views/components/footer.vue"
+import Footer from "@/views/components/footer.vue";
 import {
   medkitOutline,
   medkitSharp,

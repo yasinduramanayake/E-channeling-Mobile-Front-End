@@ -43,15 +43,7 @@
       </ion-button>
 
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+
       <br />
       <br />
 

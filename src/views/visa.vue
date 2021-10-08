@@ -5,9 +5,9 @@
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
-        <ion-title>E-channeling</ion-title>
+        <ion-title style="padding-left:70px">E-channeling</ion-title>
       </ion-toolbar>
-    </ion-header>  
+    </ion-header>
     <ion-content class="background-image" no-scroll padding>
       <ion-item>
         <h1 style="padding-left:60px">Visa Card Details</h1>
@@ -21,11 +21,11 @@
         </ion-item>
         <br />
 
-        <ion-item> 
+        <ion-item>
           <ion-input placeholder="Card Holder"></ion-input>
         </ion-item>
         <br />
-      
+
         <ion-item>
           <ion-input placeholder="Expiry Date"></ion-input>
         </ion-item>
@@ -35,16 +35,15 @@
           <ion-input placeholder="CVV"></ion-input>
         </ion-item>
         <br />
-<center>
-        <ion-button
-          size="large"
-          color="danger"
-          @click="NextRoute('/savecard')"
-          expand="medium"
-          >Add
-        </ion-button>
-        
-</center>
+        <center>
+          <ion-button
+            size="large"
+            color="danger"
+            @click="NextRoute('/savecard')"
+            expand="medium"
+            >Add
+          </ion-button>
+        </center>
       </div>
     </ion-content>
   </ion-page>

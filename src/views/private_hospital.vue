@@ -5,7 +5,7 @@
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
-        <ion-title>Private Hospital Channeling</ion-title>
+        <ion-title style="padding-left:70px">Private Hospitals</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>

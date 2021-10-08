@@ -5,7 +5,7 @@
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
-        <ion-title>Ayurvedic Channeling</ion-title>
+        <ion-title style="padding-left:70px">Ayurvedic Hospitals</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
@@ -125,6 +125,7 @@ import {
   IonSelect,
   IonSelectOption,
 } from "@ionic/vue";
+
 export default {
   components: {
     IonPage,

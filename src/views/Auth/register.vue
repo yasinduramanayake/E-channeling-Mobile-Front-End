@@ -5,45 +5,42 @@
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
-  <ion-title style="padding-left:70px">E-channeling</ion-title>
+        <ion-title style="padding-left:70px">E-channeling</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="background-image" no-scroll padding>
-<Br />
-    <Logo/>
+      <Br />
+      <Logo />
 
-     
-        <ion-item>
-          <ion-label position="stacked">E-mail</ion-label>
-          <ion-input placeholder="E-mail"></ion-input>
-        </ion-item>
-        <br />
-        <br />
+      <ion-item>
+        <ion-label position="stacked">E-mail</ion-label>
+        <ion-input placeholder="E-mail"></ion-input>
+      </ion-item>
+      <br />
+      <br />
 
-        <ion-item>
-          <ion-label position="stacked">Password</ion-label>
-          <ion-input placeholder="Password"></ion-input>
-        </ion-item>
-        <br />
-        <br />
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input placeholder="Password"></ion-input>
+      </ion-item>
+      <br />
+      <br />
 
-        <ion-item>
-          <ion-label position="stacked">Re-enter Password</ion-label>
-          <ion-input placeholder="Password"></ion-input>
-        </ion-item>
-        <br />
-        <br />
-        <br />
+      <ion-item>
+        <ion-label position="stacked">Re-enter Password</ion-label>
+        <ion-input placeholder="Password"></ion-input>
+      </ion-item>
+      <br />
+      <br />
+      <br />
 
-        <ion-button
-          color="primary"
-          @click="() => router.push('/login')"
-          expand="block"
-          >Register
-        </ion-button>
-    
+      <ion-button
+        color="primary"
+        @click="() => router.push('/login')"
+        expand="block"
+        >Register
+      </ion-button>
     </ion-content>
-    
   </ion-page>
 </template>
 <script>
@@ -60,11 +57,9 @@ import {
   IonItem,
   IonButton,
 } from "@ionic/vue";
-import login from "@/router/modules/login";
 import { useRouter } from "vue-router";
-import Logo from "@/views/components/logo.vue"; 
+import Logo from "@/views/components/logo.vue";
 export default {
-  name: login,
   components: {
     IonPage,
     IonContent,
@@ -88,4 +83,3 @@ export default {
   },
 };
 </script>
-
