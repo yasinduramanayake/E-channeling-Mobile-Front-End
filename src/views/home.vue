@@ -1,9 +1,5 @@
 <template>
   <ion-page>
-<<<<<<< HEAD
-  <span class="border border-danger"></span>
-=======
->>>>>>> main
     <ion-content class="background-image" no-scroll padding>
       <br />
       <br />
@@ -26,12 +22,8 @@
       <br />
       <br />
       <br />
-<<<<<<< HEAD
-    
-=======
     </ion-content>
 
->>>>>>> main
     <ion-row>
       <ion-col>
         <ion-button
@@ -52,30 +44,18 @@
         </ion-button>
       </ion-col>
     </ion-row>
-<<<<<<< HEAD
-    </ion-content>
-  </ion-page>
-</template>
-<script>
-import { IonPage, IonContent, IonButton } from "@ionic/vue";
-=======
   </ion-page>
 </template>
 <script>
 import { IonPage, IonContent, IonButton, IonCol } from "@ionic/vue";
->>>>>>> main
 import { useRouter } from "vue-router";
 export default {
   components: {
     IonPage,
     IonContent,
     IonButton,
-<<<<<<< HEAD
-=======
     IonCol,
->>>>>>> main
   },
-
   setup() {
     const router = useRouter();
     return {
@@ -84,12 +64,6 @@ export default {
   },
 };
 </script>
-<<<<<<< HEAD
-=======
 <style scoped>
 @import "../theme/custom.css";
 </style>
-
-
-
->>>>>>> main

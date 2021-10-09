@@ -5,20 +5,14 @@
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
-        <ion-title>Lab Test</ion-title>
+        <ion-title style="padding-left:70px">E-channeling</ion-title>
       </ion-toolbar>
     </ion-header>
+    <ion-content class="background-image">
+    <br/>
+      <Logo />
 
-    <ion-content>
-      <ion-grid>
-        <ion-row> </ion-row>
-        <ion-row>
-          <br />
-          <img class="img" src="assets/lab.jpg" />
-        </ion-row>
-      </ion-grid>
-
-      <div>
+      <div style="padding-top:20px">
         <ion-item>
           <ion-label position="stacked">Patient Name</ion-label>
           <ion-input placeholder="Patient Name"></ion-input>
@@ -32,8 +26,8 @@
         <br />
 
         <ion-item>
-          <ion-label position="stacked">Laboratory Name</ion-label>
-          <ion-input placeholder="Laboratory Name"></ion-input>
+          <ion-label position="stacked">Pharmacy Name</ion-label>
+          <ion-input placeholder="Pharmacy Name"></ion-input>
         </ion-item>
         <br />
 
@@ -43,7 +37,7 @@
         </ion-item>
         <br />
         <ion-item>
-          <ion-label position="stacked">Lab Test Details</ion-label>
+          <ion-label position="stacked">Prescription Details</ion-label>
           <ion-input placeholder="details"></ion-input>
         </ion-item>
         <br />
@@ -57,6 +51,9 @@
         </ion-button>
       </div>
     </ion-content>
+    <ion-toolbar>
+      <Footer />
+    </ion-toolbar>
   </ion-page>
 </template>
 <script>
@@ -71,12 +68,10 @@ import {
   IonInput,
   IonLabel,
   IonItem,
-  IonGrid,
-  IonRow,
   IonButton,
 } from "@ionic/vue";
-
-import { useRouter } from "vue-router";
+import Footer from "@/views/components/footer.vue";
+import Logo from "@/views/components/logo_sm.vue";
 export default {
   components: {
     IonPage,
@@ -90,8 +85,8 @@ export default {
     IonInput,
     IonLabel,
     IonItem,
-    IonGrid,
-    IonRow,
+    Footer,
+    Logo,
   },
   methods: {
     NextRoute() {
@@ -102,12 +97,5 @@ export default {
 </script>
 
 <style scoped>
-@import "../theme/custom.css";
 
-.img {
-  padding-right: 8%;
-  padding-left: 8%;
-  height: 180px;
-  width: 400px;
-}
 </style>

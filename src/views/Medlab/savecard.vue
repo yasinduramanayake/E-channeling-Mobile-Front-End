@@ -78,5 +78,5 @@ export default {
 };
 </script>
 <style scoped>
-@import "../theme/custom.css";
+
 </style>

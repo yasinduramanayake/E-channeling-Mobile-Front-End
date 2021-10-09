@@ -2,7 +2,7 @@ export default [
 
   {
     path: '',
-    component: () => import('@/views/Home.vue'),
+    component: () => import('@/views/home.vue'),
   },
 
 {
@@ -11,7 +11,7 @@ export default [
      },
   {
     path: '/login',
-    component: () => import('@/views/Auth/Login.vue'),
+    component: () => import('@/views/Auth/login.vue'),
   },
 
   {

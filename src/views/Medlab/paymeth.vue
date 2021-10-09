@@ -139,7 +139,6 @@ export default {
 };
 </script>
 <style scoped>
-@import "../theme/custom.css";
 
 .btn {
   padding-left: 5%;

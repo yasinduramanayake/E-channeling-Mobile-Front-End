@@ -94,7 +94,6 @@ export default {
 };
 </script>
 <style scoped>
-@import "../theme/custom.css";
 
 .label {
   font-size: 1.2rem;
