@@ -13,8 +13,9 @@
       <ion-grid>
         <ion-row> </ion-row>
         <ion-row>
-          <br />
-          <img class="img" src="assets/lab.jpg" />
+          <br /><center>
+          <img style="height:130px;" class="img" src="assets/lab.jpg" />
+        </center>
         </ion-row>
       </ion-grid>
 
@@ -57,6 +58,9 @@
         </ion-button>
       </div>
     </ion-content>
+    <ion-toolbar>
+      <Footer />
+    </ion-toolbar>
   </ion-page>
 </template>
 <script>
@@ -75,8 +79,7 @@ import {
   IonRow,
   IonButton,
 } from "@ionic/vue";
-
-import { useRouter } from "vue-router";
+import Footer from "@/views/components/footer.vue";
 export default {
   components: {
     IonPage,
@@ -92,6 +95,7 @@ export default {
     IonItem,
     IonGrid,
     IonRow,
+    Footer,
   },
   methods: {
     NextRoute() {
