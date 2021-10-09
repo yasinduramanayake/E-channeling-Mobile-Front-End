@@ -1,10 +1,6 @@
 <template>
   <ion-page>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   <span class="border border-danger"></span>
->>>>>>> pubudi
     <ion-content class="background-image" no-scroll padding>
       <br />
       <br />
@@ -27,7 +23,6 @@
       <br />
       <br />
       <br />
-      </ion-content>
     
     <ion-row>
       <ion-col>
@@ -49,43 +44,17 @@
         </ion-button>
       </ion-col>
     </ion-row>
-<<<<<<< HEAD
-=======
-    <ion-content>
-     <ion-grid>
-      <ion-row>
-        <ion-col>
-          <img class="logo" src="assets/echannelling.png" />
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-            <ion-button class = "loginBtn" expand="block">Login</ion-button>
-        </ion-col>
-        <ion-col>
-           <ion-button class = "regBtn" expand="block">Sign Up</ion-button>
-        </ion-col>
-        
-      </ion-row>
-      </ion-grid> 
-      </ion-Content>   
-      
-    
->>>>>>> madura
-=======
-    
->>>>>>> pubudi
+    </ion-content>
   </ion-page>
 </template>
 <script>
-import { IonPage, IonContent, IonButton,IonCol } from "@ionic/vue";
+import { IonPage, IonContent, IonButton } from "@ionic/vue";
 import { useRouter } from "vue-router";
 export default {
   components: {
     IonPage,
     IonContent,
     IonButton,
-    IonCol
   },
   setup() {
     const router = useRouter();
@@ -95,6 +64,3 @@ export default {
   },
 };
 </script>
-<style scoped>
-@import "../theme/custom.css";
-</style>

@@ -1,30 +1,23 @@
 export default [
+
   {
     path: '',
-    component: () => import('@/views/home.vue'),
+    component: () => import('@/views/Home.vue'),
   },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> pubudi
-{
+
+  {
      path: '',
      component: () => import ('@/views/Folder.vue')
      },
   {
     path: '/login',
-    component: () => import('@/views/Auth/login.vue'),
+    component: () => import('@/views/Auth/Login.vue'),
   },
 
   {
     path: '/register',
     component: () => import('@/views/Auth/register.vue'),
   },
-
-<<<<<<< HEAD
-=======
-=======
->>>>>>> pubudi
 
   {
     path: '/channel1',
@@ -51,8 +44,5 @@ export default [
     path: '/details',
     component: () => import('@/views/details.vue'),
   },
-<<<<<<< HEAD
->>>>>>> madura
-=======
->>>>>>> pubudi
+
 ]
