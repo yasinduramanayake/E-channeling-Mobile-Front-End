@@ -37,23 +37,13 @@
         <br />
         <center>
           <ion-button
-            size="large"
-            color="danger"
-            @click="NextRoute('/savecard')"
-            expand="medium"
-            >Add
-          </ion-button>
-        </center>
-        <center>
-          <ion-button
-            class="btn"
+            style="padding-left:60px; padding-right:60px;"
             color="tertiary"
             @click="NextRoute('/savecard')"
             expand="block"
             >Add
           </ion-button>
         </center>
-        >>>>>>> madura
       </div>
     </ion-content>
   </ion-page>
@@ -94,9 +84,4 @@ export default {
 
 <style scoped>
 @import "../theme/custom.css";
-
-.btn {
-  padding-left: 2%;
-  padding-right: 2%;
-}
 </style>

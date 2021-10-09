@@ -25,7 +25,7 @@
                   </div>
                 </center>
                 <ion-button
-              
+                  style="padding-left:60px; padding-right:60px;"
                   color="tertiary"
                   @click="NextRoute1('/prescription')"
                   expand="block"
@@ -51,8 +51,8 @@
                   </div>
                 </center>
                 <ion-button
-                 
-                  color="primary"
+                  style="padding-left:60px; padding-right:60px;"
+                  color="tertiary"
                   @click="NextRoute2('/labtest')"
                   expand="block"
                   >Add Labtest Details
@@ -77,8 +77,8 @@
                   </div>
                 </center>
                 <ion-button
-                
-                  color="primary"
+                  style="padding-left:60px; padding-right:60px;"
+                  color="tertiary"
                   @click="NextRoute3('/drug')"
                   expand="block"
                   >Drugs to Deliver
@@ -103,8 +103,8 @@
                   </div>
                 </center>
                 <ion-button
-                  
-                  color="primary"
+                  style="padding-left:60px; padding-right:60px;"
+                  color="tertiary"
                   @click="NextRoute4('/paymeth')"
                   expand="block"
                   >Payment Details
@@ -114,11 +114,10 @@
           </ion-grid>
         </ion-card-content>
       </ion-card>
+      <ion-toolbar>
+        <Footer />
+      </ion-toolbar>
     </ion-content>
-
-    <ion-toolbar>
-      <Footer />
-    </ion-toolbar>
   </ion-page>
 </template>
 <script>
@@ -193,11 +192,6 @@ export default {
 </script>
 <style scoped>
 @import "../theme/custom.css";
-
-.btn {
-  padding-right: 10%;
-  padding-left: 10%;
-}
 
 .img {
   height: 150px;

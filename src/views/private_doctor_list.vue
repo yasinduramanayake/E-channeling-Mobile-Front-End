@@ -35,7 +35,7 @@
                   <ion-col size="1">
                     <ion-button
                       color="tertiary"
-                      @click="() => router.push('/profile')"
+                      @click="()=> router.push('/profile')"
                       expand="large"
                       >BOOK
                     </ion-button>
@@ -57,7 +57,7 @@
                   <ion-col size="1">
                     <ion-button
                       color="tertiary"
-                      @click="() => router.push('/profile')"
+                      @click="()=> router.push('/profile')"
                       expand="large"
                       >BOOK
                     </ion-button>
@@ -79,7 +79,7 @@
                   <ion-col size="1">
                     <ion-button
                       color="tertiary"
-                      @click="() => router.push('/profile')"
+                      @click="()=> router.push('/profile')"
                       expand="large"
                       >BOOK
                     </ion-button>
@@ -101,7 +101,7 @@
                   <ion-col size="1">
                     <ion-button
                       color="tertiary"
-                      @click="() => router.push('/profile')"
+                      @click="()=> router.push('/profile')"
                       expand="large"
                       >BOOK
                     </ion-button>
@@ -123,7 +123,7 @@
                   <ion-col size="1">
                     <ion-button
                       color="tertiary"
-                      @click="() => router.push('/profile')"
+                      @click="()=> router.push('/profile')"
                       expand="large"
                       >BOOK
                     </ion-button>
@@ -145,7 +145,7 @@
                   <ion-col size="1">
                     <ion-button
                       color="tertiary"
-                      @click="() => router.push('/profile')"
+                      @click="()=> router.push('/profile')"
                       expand="large"
                       >BOOK
                     </ion-button>
@@ -167,7 +167,7 @@
                   <ion-col size="1">
                     <ion-button
                       color="tertiary"
-                      @click="() => router.push('/profile')"
+                      @click="()=> router.push('/profile')"
                       expand="large"
                       >BOOK
                     </ion-button>
@@ -188,7 +188,7 @@
                   <ion-col size="1">
                     <ion-button
                       color="tertiary"
-                      @click="() => router.push('/profile')"
+                      @click="()=> router.push('/profile')"
                       expand="large"
                       >BOOK
                     </ion-button>
@@ -209,7 +209,7 @@
                   <ion-col size="1">
                     <ion-button
                       color="tertiary"
-                      @click="() => router.push('/profile')"
+                      @click="()=> router.push('/profile')"
                       expand="large"
                       >BOOK
                     </ion-button>
@@ -230,7 +230,7 @@
                   <ion-col size="1">
                     <ion-button
                       color="tertiary"
-                      @click="() => router.push('/profile')"
+                      @click="()=> router.push('/profile')"
                       expand="large"
                       >BOOK
                     </ion-button>

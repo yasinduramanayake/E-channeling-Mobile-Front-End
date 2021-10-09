@@ -27,31 +27,27 @@
         <ion-input placeholder="Password"></ion-input>
       </ion-item>
       <br />
-      <ion-text class="txt_forgot_password" color="dark"
-        >Forgotten Password?</ion-text
-      >
-      <br />
-      <br />
+
       <br />
 
-      <ion-button
-        color="tertiary"
-        @click="NextRoute1('/menu')"
-        expand="block"
-        >SIGN IN
-      </ion-button>
-
+      <div style="margin-left:5%;, margin-right:5%;">
+        <ion-button color="tertiary" @click="NextRoute1('/menu')" expand="block"
+          >SIGN IN
+        </ion-button>
+      </div>
+      <br />
+      <div class="txt_forgot_password">
+        <ion-text color="dark">Forgotten Password?</ion-text>
+      </div>
       <ion-row> </ion-row>
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
 
-      <ion-text class="signup" color="tertiary"
+      <ion-text
+        class="signup"
+        @click="() => router.push('/register')"
+        color="tertiary"
         >Don't Have an Account ? SIGN UP</ion-text
       >
     </ion-content>
@@ -112,14 +108,9 @@ export default {
 </script>
 
 <style scoped>
-.btn {
-  padding-left: 5%;
-  padding-right: 5%;
-  font-weight: bold;
-}
 .txt_forgot_password {
   margin-top: 2%;
-  padding-left: 55%;
+  padding-left: 30%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: medium;
 }

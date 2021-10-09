@@ -9,7 +9,7 @@
       </ion-toolbar>
     </ion-header>
     <ion-item>
-      <h1 style="padding-left:60px">Master Card Details</h1>
+      <h2 style="padding-left:60px">Master Card Details</h2>
     </ion-item>
     <ion-content class="background-image" no-scroll padding>
       <center>
@@ -17,36 +17,35 @@
           <img src="assets/visa4.png" />
         </div>
       </center>
-      <h1>Medical Lab</h1>
-      Your Health Companian
-    <ion-row>
-      <ion-col>
-        <ion-button
-          color="tertiary"
-          @click="NextRoute('/paymeth')"
-          expand="block"
-          >Delete
-        </ion-button>
-      </ion-col>
-    </ion-row>
-    <center>
-      <div>
-        <img src="assets/master4.png" />
-      </div>
+      <ion-row>
+        <ion-col>
+          <ion-button
+            style="padding-left:60px; padding-right:60px;"
+            color="tertiary"
+            @click="NextRoute('/paymeth')"
+            expand="block"
+            >Delete
+          </ion-button>
+          <br /><br /><br />
+        </ion-col>
+      </ion-row>
+      <center>
+        <div>
+          <img src="assets/master4.png" />
+        </div>
       </center>
-      <h1>Medical Lab</h1>
-      Your Health Companian
       <br />
-    <ion-row>
-      <ion-col>
-        <ion-button
-          color="tertiary"
-          @click="NextRoute('/paymeth')"
-          expand="block"
-          >Delete
-        </ion-button>
-      </ion-col>
-    </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button
+            style="padding-left:60px; padding-right:60px;"
+            color="tertiary"
+            @click="NextRoute('/paymeth')"
+            expand="block"
+            >Delete
+          </ion-button>
+        </ion-col>
+      </ion-row>
     </ion-content>
   </ion-page>
 </template>

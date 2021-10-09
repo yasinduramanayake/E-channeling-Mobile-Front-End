@@ -42,7 +42,7 @@
         <br />
 
         <ion-button
-          class="btn_main"
+          style="padding-left:60px; padding-right:60px;"
           color="primary"
           @click="NextRoute('/meddash')"
           expand="block"
@@ -97,9 +97,4 @@ export default {
 
 <style scoped>
 @import "../theme/custom.css";
-
-.btn_main {
-  padding-left: 5%;
-  padding-right: 5%;
-}
 </style>

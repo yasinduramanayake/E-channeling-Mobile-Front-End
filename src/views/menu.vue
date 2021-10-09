@@ -10,7 +10,7 @@
     </ion-header>
     <ion-content class="background-image" no-scroll padding>
       <ion-item>
-        <h1 style="padding-left:100px">Main Menu</h1>
+        <h2 style="padding-left:120px">Main Menu</h2>
       </ion-item>
 
       <div>
@@ -30,6 +30,7 @@
             style="color: #808080;"
             slot="start"
           ></ion-icon>
+
         </ion-item>
       </div>
     </ion-content>

@@ -64,7 +64,6 @@
       <br /><br /><br /><br />
    
       <ion-button
-        class="btn"
         color="tertiary"
         @click="() => router.push('/menu')"
         expand="block"
