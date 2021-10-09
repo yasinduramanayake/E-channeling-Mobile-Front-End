@@ -35,7 +35,7 @@
 </template>
 <script>
 import { 
-  IonPage, 
+  IonPage,
   IonContent, 
   IonButton, 
   IonCol, 

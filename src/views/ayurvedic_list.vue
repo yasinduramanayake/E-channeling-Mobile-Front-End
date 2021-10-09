@@ -5,254 +5,53 @@
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
-        <ion-title>Ayurvedic Channeling</ion-title>
+        <ion-title> Ayurvedic Channeling</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content>
       <ion-grid>
         <ion-row>
           <ion-col>
-            <br />
             <Logo />
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col>
-                      <ion-text class="txt" color="medium">Ayurvedic Gasteritis Doctors</ion-text>
-                      <br />
+            <ion-text class="txt" color="medium">Dermatologist</ion-text>
+
+            <br /><br />
             <ion-list>
-              <ion-item>
-                <ion-row>
-                  <ion-col size="3">
-                    <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d3.jpg" />
-                    </ion-thumbnail>
-                  </ion-col>
-                  <ion-col size="8">
-                    <p>Dr. K.Sudaasinghe</p>
-                    <ion-text color="medium">MBBS</ion-text>
-                  </ion-col>
-                  <ion-col size="1">
-                    <ion-button
-                      class="btn"
-                      color="tertiary"
-                      @click="NextRoute1('/profile')"
-                      expand="large"
-                      >BOOK
-                    </ion-button>
-                  </ion-col>
-                </ion-row>
-              </ion-item>
-
-              <ion-item>
-                <ion-row>
-                  <ion-col size="3">
-                    <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d5.jpg" />
-                    </ion-thumbnail>
-                  </ion-col>
-                  <ion-col size="8">
-                    <p>Dr. T. S. M. Perera</p>
-                    <ion-text color="medium">MBBS.(Col), M.D</ion-text>
-                  </ion-col>
-                  <ion-col size="1">
-                    <ion-button
-                      class="btn"
-                      color="tertiary"
-                      @click="NextRoute1('/profile')"
-                      expand="large"
-                      >BOOK
-                    </ion-button>
-                  </ion-col>
-                </ion-row>
-              </ion-item>
-
-              <ion-item>
-                <ion-row>
-                  <ion-col size="3">
-                    <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d3.jpg" />
-                    </ion-thumbnail>
-                  </ion-col>
-                  <ion-col size="8" size-lg>
-                    <p>Dr. K.Sudaasinghe</p>
-                    <ion-text color="medium">MBBS.(Col), M.D</ion-text>
-                  </ion-col>
-                  <ion-col size="1">
-                    <ion-button
-                      class="btn"
-                      color="tertiary"
-                      @click="NextRoute1('/profile')"
-                      expand="large"
-                      >BOOK
-                    </ion-button>
-                  </ion-col>
-                </ion-row>
-              </ion-item>
-
-              <ion-item>
-                <ion-row>
-                  <ion-col size="3">
-                    <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d5.jpg" />
-                    </ion-thumbnail>
-                  </ion-col>
-                  <ion-col size="8" size-lg>
-                    <p>Dr. K.Sudaasinghe</p>
-                    <ion-text color="medium">MBBS.(Col), M.D,</ion-text>
-                  </ion-col>
-                  <ion-col size="1">
-                    <ion-button
-                      class="btn"
-                      color="tertiary"
-                      @click="NextRoute1('/profile')"
-                      expand="large"
-                      >BOOK
-                    </ion-button>
-                  </ion-col>
-                </ion-row>
-              </ion-item>
-
-              <ion-item>
-                <ion-row>
-                  <ion-col size="3">
-                    <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d2.jpg" />
-                    </ion-thumbnail>
-                  </ion-col>
-                  <ion-col size="8" size-lg>
-                    <p>Dr. K.Ranaasinghe</p>
-                    <ion-text color="medium">MBBS.(UK), M.D</ion-text>
-                  </ion-col>
-                  <ion-col size="1">
-                    <ion-button
-                      class="btn"
-                      color="tertiary"
-                      @click="NextRoute1('/profile')"
-                      expand="large"
-                      >BOOK
-                    </ion-button>
-                  </ion-col>
-                </ion-row>
-              </ion-item>
-
-              <ion-item>
-                <ion-row>
-                  <ion-col size="3">
-                    <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d3.jpg" />
-                    </ion-thumbnail>
-                  </ion-col>
-                  <ion-col size="8" size-lg>
-                    <p>Dr. R.Dharmadase</p>
-                    <ion-text color="medium">MBBS.(Col), M.D</ion-text>
-                  </ion-col>
-                  <ion-col size="1">
-                    <ion-button
-                      class="btn"
-                      color="tertiary"
-                      @click="NextRoute1('/profile')"
-                      expand="large"
-                      >BOOK
-                    </ion-button>
-                  </ion-col>
-                </ion-row>
-              </ion-item>
-
-              <ion-item>
-                <ion-row>
-                  <ion-col size="3">
-                    <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d2.jpg" />
-                    </ion-thumbnail>
-                  </ion-col>
-                  <ion-col size="8" size-lg>
-                    <p>Dr. K.Sudaasinghe</p>
-                    <ion-text color="medium">MBBS.(Col), M.D</ion-text>
-                  </ion-col>
-                  <ion-col size="1">
-                    <ion-button
-                      class="btn"
-                      color="tertiary"
-                      @click="NextRoute1('/profile')"
-                      expand="large"
-                      >BOOK
-                    </ion-button>
-                  </ion-col>
-                </ion-row>
-              </ion-item>
-              <ion-item>
-                <ion-row>
-                  <ion-col size="3">
-                    <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d5.jpg" />
-                    </ion-thumbnail>
-                  </ion-col>
-                  <ion-col size="8" size-lg>
-                    <p>Dr. K.Sudaasinghe</p>
-                    <ion-text color="medium">MBBS.(Col), M.D</ion-text>
-                  </ion-col>
-                  <ion-col size="1">
-                    <ion-button
-                      class="btn"
-                      color="tertiary"
-                      @click="NextRoute1('/profile')"
-                      expand="large"
-                      >BOOK
-                    </ion-button>
-                  </ion-col>
-                </ion-row>
-              </ion-item>
-              <ion-item>
-                <ion-row>
-                  <ion-col size="3">
-                    <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d2.jpg" />
-                    </ion-thumbnail>
-                  </ion-col>
-                  <ion-col size="8" size-lg>
-                    <p>Dr. K.Sudaasinghe</p>
-                    <ion-text color="medium">MBBS.(Col),</ion-text>
-                  </ion-col>
-                  <ion-col size="1">
-                    <ion-button
-                      class="btn"
-                      color="tertiary"
-                      @click="NextRoute1('/profile')"
-                      expand="large"
-                      >BOOK
-                    </ion-button>
-                  </ion-col>
-                </ion-row>
-              </ion-item>
-              <ion-item>
-                <ion-row>
-                  <ion-col size="3">
-                    <ion-thumbnail item-start style="height:80px; width:70px">
-                      <img src="assets/d5.jpg" />
-                    </ion-thumbnail>
-                  </ion-col>
-                  <ion-col size="8" size-lg>
-                    <p>Dr. K.Sudaasinghe</p>
-                    <ion-text color="medium">MBBS.(Col), M.D</ion-text>
-                  </ion-col>
-                  <ion-col size="1">
-                    <ion-button
-                      class="btn"
-                      color="tertiary"
-                      @click="NextRoute1('/profile')"
-                      expand="large"
-                      >BOOK
-                    </ion-button>
-                  </ion-col>
-                </ion-row>
+              <ion-item
+                button
+                v-for="data in lists"
+                @click="
+                  () =>
+                    router.push(
+                      '/profile'
+                    )
+                "
+                :key="data.name"
+              >
+                <ion-label>
+                  <ion-row>
+                    <ion-col size="4">
+                      <ion-thumbnail item-start style="height:50px; width:70px">
+                        <img src="assets/d3.jpg" />
+                      </ion-thumbnail>
+                    </ion-col>
+                    <ion-col size="8" size-lg>
+                      <p>{{ data.name }}</p>
+                      <ion-text color="medium">{{ data.position }}</ion-text>
+                    </ion-col>
+                  </ion-row>
+                </ion-label>
               </ion-item>
             </ion-list>
           </ion-col>
         </ion-row>
       </ion-grid>
       <ion-toolbar>
-      <Footer />
+        <Footer />
       </ion-toolbar>
     </ion-content>
   </ion-page>
@@ -260,6 +59,7 @@
 
 <script>
 import { useRouter } from "vue-router";
+import { defineComponent } from "vue";
 
 import {
   IonPage,
@@ -267,11 +67,11 @@ import {
   IonGrid,
   IonRow,
   IonCol,
+  IonLabel,
   IonToolbar,
   IonHeader,
   IonTitle,
   IonList,
-  IonButton,
   IonItem,
   IonThumbnail,
   IonText,
@@ -280,10 +80,11 @@ import {
 
 import Logo from "@/views/components/logo_sm.vue";
 import Footer from "@/views/components/footer.vue";
-export default {
+export default defineComponent({
   components: {
     IonPage,
     IonContent,
+    IonLabel,
     IonGrid,
     IonRow,
     IonCol,
@@ -292,12 +93,60 @@ export default {
     IonTitle,
     IonList,
     Logo,
-    IonButton,
     IonItem,
     IonThumbnail,
     IonText,
     Footer,
     IonBackButton,
+  },
+  data() {
+    return {
+      lists: [
+        {
+          name: "Dr. K.Sudaasinghe",
+          position: "MBBS.(Col), M.D",
+        },
+        {
+          name: "Dr. A.R.D.Y.Y.Ramanayake",
+          position: "MBBS.(Col), M.D",
+        },
+        {
+          name: "Dr. W.P.C.Rathnayake",
+          position: "MBBS.(Col), M.D",
+         
+        },
+        {
+          name: "Dr. Arumugam Ballaji",
+          position: "MBBS.(Col), P.D",
+          
+        },
+        {
+          name: "Dr. Yapa Senawirathna",
+          position: "MBBS.(Col), M.D",
+          
+        },
+        {
+          name: "Dr. Apa Bandara",
+          position: "MBBS.(Col), M.D",
+          
+        },
+        {
+          name: "Dr. Yasindu Ramanayake",
+          position: "MBBS.(Col), M.D",
+          
+        },
+        {
+          name: "Dr. Pubudi Athmaja",
+          position: "MBBS.(Col), M.D",
+          
+        },
+        {
+          name: "Dr. Madura Prasad",
+          position: "MBBS.(Col), M.D",
+          
+        },
+      ],
+    };
   },
   methods: {},
 
@@ -307,7 +156,7 @@ export default {
       router,
     };
   },
-};
+});
 </script>
 
 <style>
@@ -316,6 +165,7 @@ export default {
   width: 65px;
   margin-top: 60%;
 }
+
 .txt {
   margin-left: 8%;
   font-size: 1.2rem;
