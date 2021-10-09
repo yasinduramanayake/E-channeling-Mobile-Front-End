@@ -36,7 +36,7 @@
         </ion-item>
         <br />
 <center>
-        <ion-button class='btn'
+        <ion-button style="padding-left:60px; padding-right:60px;"
           color="tertiary"
           @click="NextRoute('/savecard')"
           expand="block"
@@ -85,8 +85,4 @@ export default {
 <style scoped>
 @import "../theme/custom.css";
 
-.btn{
-  padding-left: 2%;
-    padding-right: 2%;
-}
 </style>

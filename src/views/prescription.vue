@@ -9,7 +9,7 @@
       </ion-toolbar>
     </ion-header>
     <ion-content class="background-image">
-<Logo />
+      <Logo />
 
       <div style="padding-top:20px">
         <ion-item>
@@ -23,7 +23,7 @@
           <ion-input placeholder="Your Area"></ion-input>
         </ion-item>
         <br />
-      
+
         <ion-item>
           <ion-label position="stacked">Pharmacy Name</ion-label>
           <ion-input placeholder="Pharmacy Name"></ion-input>
@@ -41,7 +41,8 @@
         </ion-item>
         <br />
 
-        <ion-button class="btn_main"
+        <ion-button
+          style="padding-left:60px; padding-right:60px;"
           color="primary"
           @click="NextRoute('/meddash')"
           expand="block"
@@ -94,9 +95,4 @@ export default {
 
 <style scoped>
 @import "../theme/custom.css";
-
-.btn_main{
-padding-left: 5%;
-padding-right: 5%;
-}
 </style>

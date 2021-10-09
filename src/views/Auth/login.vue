@@ -35,7 +35,7 @@
       <br />
 
       <ion-button
-        class="btn"
+        style="margin-left:5%;, margin-right:5%;"
         color="tertiary"
         @click="NextRoute1('/menu')"
         expand="block"
@@ -113,11 +113,7 @@ export default {
 </script>
 
 <style scoped>
-.btn {
-  padding-left: 5%;
-  padding-right: 5%;
-  font-weight: bold;
-}
+
 .txt_forgot_password {
   margin-top: 2%;
   padding-left: 55%;

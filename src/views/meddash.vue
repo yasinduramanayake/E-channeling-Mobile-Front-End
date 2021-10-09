@@ -10,7 +10,7 @@
     </ion-header>
     <br />
     <ion-content class="background-image" no-scroll padding>
-    <Logo />
+      <Logo />
       <ion-card>
         <ion-card-header>
           <Br /><ion-title>Prescription Details</ion-title>
@@ -24,7 +24,8 @@
                     <img src="assets/presc.jpg" />
                   </div>
                 </center>
-                <ion-button class="btn"
+                <ion-button
+                  style="padding-left:60px; padding-right:60px;"
                   color="tertiary"
                   @click="NextRoute1('/prescription')"
                   expand="block"
@@ -49,7 +50,8 @@
                     <img src="assets/labtest.jpg" />
                   </div>
                 </center>
-                <ion-button class="btn"
+                <ion-button
+                  style="padding-left:60px; padding-right:60px;"
                   color="tertiary"
                   @click="NextRoute2('/labtest')"
                   expand="block"
@@ -74,7 +76,8 @@
                     <img src="assets/dtot.jpg" />
                   </div>
                 </center>
-                <ion-button class="btn"
+                <ion-button
+                  style="padding-left:60px; padding-right:60px;"
                   color="tertiary"
                   @click="NextRoute3('/drug')"
                   expand="block"
@@ -99,7 +102,8 @@
                     <img src="assets/pay.jpg" />
                   </div>
                 </center>
-                <ion-button class="btn"
+                <ion-button
+                  style="padding-left:60px; padding-right:60px;"
                   color="tertiary"
                   @click="NextRoute4('/paymeth')"
                   expand="block"
@@ -110,19 +114,10 @@
           </ion-grid>
         </ion-card-content>
       </ion-card>
+      <ion-toolbar>
+        <Footer />
+      </ion-toolbar>
     </ion-content>
-
-    <ion-tabs
-      @ionTabsWillChange="beforeTabChange"
-      @ionTabsDidChange="afterTabChange"
-    >
-      <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="speakers" href="/menu">
-          <ion-icon :icon="homeOutline"></ion-icon>
-        </ion-tab-button>
-      </ion-tab-bar>
-    </ion-tabs>
-    <Footer />
   </ion-page>
 </template>
 <script>
@@ -133,8 +128,6 @@ import {
   IonPage,
   IonContent,
   IonButton,
-  IonTabBar,
-  IonTabButton,
   IonHeader,
   IonToolbar,
   IonBackButton,
@@ -147,15 +140,13 @@ import {
   IonTitle,
 } from "@ionic/vue";
 import Logo from "@/views/components/logo_sm.vue";
-import Footer from "@/views/components/footer.vue"; 
+import Footer from "@/views/components/footer.vue";
 
 export default {
   components: {
     IonPage,
     IonContent,
     IonButton,
-    IonTabBar,
-    IonTabButton,
     IonHeader,
     IonToolbar,
     IonBackButton,
@@ -202,11 +193,6 @@ export default {
 </script>
 <style scoped>
 @import "../theme/custom.css";
-
-.btn {
-  padding-right: 10%;
-  padding-left: 10%;
-}
 
 .img {
   height: 150px;
