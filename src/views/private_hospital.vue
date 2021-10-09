@@ -3,7 +3,7 @@
     <ion-header :translucent="true">
       <ion-toolbar color="tertiary">
         <ion-buttons slot="start">
-          <ion-back-button text="" default-href="/"></ion-back-button>
+          <ion-back-button text="" default-href="/menu"></ion-back-button>
         </ion-buttons>
         <ion-title style="padding-left:70px">Private Hospitals</ion-title>
       </ion-toolbar>
@@ -103,7 +103,6 @@
 </template>
 
 <script>
-
 import { useRouter } from "vue-router";
 import {
   IonPage,

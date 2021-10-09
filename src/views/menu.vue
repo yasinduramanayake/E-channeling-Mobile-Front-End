@@ -30,7 +30,6 @@
             style="color: #808080;"
             slot="start"
           ></ion-icon>
-
         </ion-item>
       </div>
     </ion-content>
@@ -59,6 +58,8 @@ import {
   tvOutline,
   tvSharp,
   bagAddOutline,
+  flowerSharp,
+  flowerOutline,
   bagAddSharp,
   logInOutline,
   logInSharp,
@@ -111,6 +112,12 @@ export default {
           iconname: tvSharp,
         },
         {
+          Heading: "Channeling History",
+          Description: "User can See Channeling History",
+          Routing: `/history`,
+          iconname: flowerSharp,
+        },
+        {
           Heading: "Medical lab",
           Description: "User can Delivery drugs etc..",
           Routing: `/medlab`,
@@ -119,7 +126,7 @@ export default {
         {
           Heading: "Logout",
           Description: "User can logout from the application",
-          Routing: "",
+          Routing: "/login",
           iconname: logOutSharp,
         },
       ],
@@ -134,6 +141,8 @@ export default {
       tvOutline,
       tvSharp,
       bagAddOutline,
+      flowerSharp,
+      flowerOutline,
       bagAddSharp,
       logInOutline,
       logInSharp,

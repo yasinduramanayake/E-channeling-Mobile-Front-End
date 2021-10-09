@@ -62,6 +62,8 @@ import {
   bagAddOutline,
   bagAddSharp,
   logInOutline,
+  flowerSharp,
+  flowerOutline,
   logInSharp,
   logOutOutline,
   logOutSharp,
@@ -88,31 +90,37 @@ export default defineComponent({
     const appPages = [
       {
         title: "Login",
-        url:'/login',
+        url: "/login",
         iosIcon: logInOutline,
         mdIcon: logInSharp,
       },
       {
         title: "Private Hospitals",
-        url:'/channel1',
+        url: "/channel1",
         iosIcon: medkitOutline,
         mdIcon: medkitSharp,
       },
       {
         title: "Ayurvedic Hospitals",
-        url:'/channel2',
+        url: "/channel2",
+        iosIcon: medkitOutline,
+        mdIcon: medkitSharp,
+      },
+      {
+        title: "Channeling History",
+        url: "/history",
         iosIcon: medkitOutline,
         mdIcon: medkitSharp,
       },
       {
         title: "Vedio Consultation",
-
+        url: "/vedio",
         iosIcon: tvOutline,
         mdIcon: tvSharp,
       },
       {
         title: "Medic Lab",
-
+        url: "/medlab",
         iosIcon: bagAddOutline,
         mdIcon: bagAddSharp,
       },
@@ -151,6 +159,8 @@ export default defineComponent({
       tvSharp,
       bagAddOutline,
       bagAddSharp,
+      flowerOutline,
+      flowerSharp,
       logInOutline,
       logInSharp,
       logOutOutline,
