@@ -1,18 +1,17 @@
 <template>
   <ion-page>
+    <ion-header :translucent="true">
+      <ion-toolbar color="tertiary">
+        <ion-buttons slot="start">
+          <ion-back-button text="" default-href="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title style="padding-left:70px">Private Hospitals</ion-title>
+      </ion-toolbar>
+    </ion-header>
     <ion-content>
       <ion-grid>
         <ion-row>
-          <ion-col>
-            <ion-header>
-              <ion-toolbar>
-                <ion-buttons slot="start">
-                  <ion-back-button :text="Back" :icon="buttonIcon">
-                  </ion-back-button>
-                </ion-buttons>
-              </ion-toolbar>
-            </ion-header>
-          </ion-col>
+          <ion-col> </ion-col>
         </ion-row>
 
         <ion-row>
@@ -86,7 +85,12 @@
                 <BR />
                 <Br />
 
-                <ion-button expand="block">Search</ion-button>
+                <ion-button
+                  expand="block"
+                  color="tertiary"
+                  @click="() => router.push('/list')"
+                  >Search</ion-button
+                >
                 <BR />
                 <Br />
               </ion-card-content>
@@ -99,24 +103,63 @@
 </template>
 
 <script>
+
+import { useRouter } from "vue-router";
 import {
   IonPage,
   IonContent,
   IonCard,
   IonInput,
+  IonGrid,
+  IonRow,
+  IonCol,
   IonToolbar,
   IonButton,
+  IonBackButton,
   IonHeader,
+  IonTitle,
+  IonCardHeader,
+  IonCardTitle,
+  IonCardSubtitle,
+  IonCardContent,
+  IonText,
+  IonList,
+  IonItem,
+  IonSelect,
+  IonSelectOption,
 } from "@ionic/vue";
+
 export default {
   components: {
     IonPage,
     IonContent,
     IonCard,
-    IonToolbar,
+    IonGrid,
     IonInput,
+    IonRow,
+    IonCol,
+    IonToolbar,
     IonButton,
+    IonBackButton,
     IonHeader,
+    IonTitle,
+    IonCardHeader,
+    IonCardTitle,
+    IonCardSubtitle,
+    IonCardContent,
+    IonText,
+    IonList,
+    IonItem,
+    IonSelect,
+    IonSelectOption,
+  },
+  methods: {},
+
+  setup() {
+    const router = useRouter();
+    return {
+      router,
+    };
   },
 };
 </script>

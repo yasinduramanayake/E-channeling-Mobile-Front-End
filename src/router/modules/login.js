@@ -5,13 +5,23 @@ export default [
     component: () => import('@/views/Home.vue'),
   },
 
-  {
+{
      path: '',
      component: () => import ('@/views/Folder.vue')
      },
   {
     path: '/login',
     component: () => import('@/views/Auth/Login.vue'),
+  },
+
+  {
+    path: '/list',
+    component: () => import('@/views/private_doctor_list.vue'),
+  },
+
+  {
+    path: '/list2',
+    component: () => import('@/views/ayurvedic_list.vue'),
   },
 
   {
@@ -27,12 +37,6 @@ export default [
   {
     path: '/channel2',
     component: () => import('@/views/ayurvedic_hospital.vue'),
-  },
-
-  
-  {
-    path: '/privateList',
-    component: () => import('@/views/private_doctor_list.vue'),
   },
 
   {

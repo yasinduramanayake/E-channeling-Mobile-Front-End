@@ -23,10 +23,9 @@
       <ion-row>
         <ion-col>
           <ion-button
-            size="large"
-            color="danger"
+            color="primary"
             @click="NextRoute('/meddash')"
-            expand="full"
+            expand="block"
             >Go Back To Home
           </ion-button>
         </ion-col>

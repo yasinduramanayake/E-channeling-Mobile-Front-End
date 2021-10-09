@@ -1,52 +1,55 @@
 <template>
   <ion-page>
     <ion-header :translucent="true">
-      <ion-toolbar color="light">
+      <ion-toolbar color="tertiary">
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
-        <ion-title>E-channeling</ion-title>
+        <ion-title style="padding-left:70px">E-channeling</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content class="background-image" no-scroll padding>
+    <ion-content>
+      <ion-row>
+        <Logo />
+      </ion-row>
+
+      <br />
+
       <ion-item>
-        <h1 style="padding-left:150px">Login</h1>
+        <ion-label position="stacked">E-mail</ion-label>
+        <ion-input placeholder="E-mail"></ion-input>
       </ion-item>
-
-      <br />
-      <br />
       <br />
       <br />
 
-      <div style="padding-top:50px">
-        <ion-item>
-          <ion-label position="stacked">E-mail</ion-label>
-          <ion-input placeholder="E-mail"></ion-input>
-        </ion-item>
-        <br />
-        <br />
+      <ion-item>
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input placeholder="Password"></ion-input>
+      </ion-item>
+      <br />
 
-        <ion-item>
-          <ion-label position="stacked">Password</ion-label>
-          <ion-input placeholder="Password"></ion-input>
-        </ion-item>
-        <br />
-        <ion-button
-          size="large"
-          color="danger"
-          @click="NextRoute1('/menu')"
-          expand="full"
-          >Login
-        </ion-button>
-<br/>
-        <ion-button
-          size="large"
-          color="danger"
-          @click="NextRoute2()"
-          expand="full"
-          >Forgotten Password
+      <br />
+
+      <div style="margin-left:5%;, margin-right:5%;">
+        <ion-button color="tertiary" @click="NextRoute1('/menu')" expand="block"
+          >SIGN IN
         </ion-button>
       </div>
+      <br />
+      <div class="txt_forgot_password">
+        <ion-text color="dark">Forgotten Password?</ion-text>
+      </div>
+      <ion-row> </ion-row>
+      <br />
+      <br />
+      <br />
+
+      <ion-text
+        class="signup"
+        @click="() => router.push('/register')"
+        color="tertiary"
+        >Don't Have an Account ? SIGN UP</ion-text
+      >
     </ion-content>
   </ion-page>
 </template>
@@ -63,9 +66,12 @@ import {
   IonLabel,
   IonItem,
   IonButton,
+  IonText,
+  IonRow,
 } from "@ionic/vue";
 import login from "@/router/modules/login";
 import { useRouter } from "vue-router";
+import Logo from "@/views/components/logo.vue";
 export default {
   name: login,
   components: {
@@ -80,6 +86,9 @@ export default {
     IonInput,
     IonLabel,
     IonItem,
+    IonText,
+    Logo,
+    IonRow,
   },
   methods: {
     NextRoute1() {
@@ -97,6 +106,19 @@ export default {
   },
 };
 </script>
+
 <style scoped>
-@import "../../theme/custom.css";
+.txt_forgot_password {
+  margin-top: 2%;
+  padding-left: 30%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+}
+
+.signup {
+  padding-left: 14%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+}
 </style>

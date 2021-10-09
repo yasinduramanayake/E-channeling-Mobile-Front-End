@@ -1,18 +1,17 @@
 <template>
   <ion-page>
+    <ion-header :translucent="true">
+      <ion-toolbar color='tertiary'>
+        <ion-buttons slot="start">
+          <ion-back-button text="" default-href="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title style="padding-left:70px"> E-Channeling</ion-title>
+      </ion-toolbar>
+    </ion-header>
     <ion-content>
       <ion-grid>
         <ion-row>
-          <ion-col>
-            <ion-header>
-              <ion-toolbar>
-                <ion-buttons slot="start">
-                  <ion-back-button :text="Back" :icon="buttonIcon">
-                  </ion-back-button>
-                </ion-buttons>
-              </ion-toolbar>
-            </ion-header>
-          </ion-col>
+          <ion-col> </ion-col>
         </ion-row>
 
         <ion-row>
@@ -27,7 +26,7 @@
               <ion-card-header>
                 <ion-card-title>Private Hospital</ion-card-title>
                 <ion-card-subtitle>Doctor Channeling</ion-card-subtitle>
-                <Br />
+                <br />
               </ion-card-header>
 
               <ion-card-content>
@@ -36,7 +35,7 @@
                 </ion-text>
                 <ion-label color="primary">Dr. Ananda Wijewickrama</ion-label
                 ><br />
-                <Br />
+                <br />
                 <ion-list>
                   <ion-text color="dark">
                     <h2>Specialization:</h2>
@@ -44,7 +43,7 @@
                     ><br />
                   </ion-text>
                 </ion-list>
-                <Br />
+                <br />
               </ion-card-content>
             </ion-card>
           </ion-col>
@@ -53,9 +52,13 @@
         <ion-row>
           <ion-col>
             <ion-card>
-              <h2>FEEDBACKS</h2>
-              <Br />
-              <ion-badge color="primary">4.8 / 5</ion-badge>
+              <div class="title">
+              
+                  <ion-col><h2>REVIEWS</h2></ion-col>
+                   <ion-badge color="primary">4.8 / 5</ion-badge>
+
+              </div>
+              <br />
 
               <ion-card-content>
                 <ion-text color="dark">
@@ -81,8 +84,10 @@
         <ion-row>
           <ion-col>
             <ion-card>
-              <h2>Channel Your Doctor</h2>
-              <Br />
+              <div class="title">
+                <h2>Channel Your Doctor</h2>
+              </div>
+              <br />
 
               <ion-card-content>
                 <ion-text color="dark">
@@ -90,7 +95,7 @@
                 </ion-text>
 
                 <br />
-                <Br />
+                <br />
                 <ion-list>
                   <ion-text color="dark">
                     <h2>Session</h2>
@@ -132,34 +137,79 @@
                     </ion-select>
                   </ion-item>
                 </ion-list>
-                <BR />
+                <br />
 
-                <ion-button expand="block">Channel</ion-button>
-                <Br />
+                <ion-button color="tertiary" expand="block" @click="() => router.push('/paymeth')"
+                  >Channel</ion-button
+                >
               </ion-card-content>
             </ion-card>
           </ion-col>
         </ion-row>
       </ion-grid>
     </ion-content>
+
+    <ion-toolbar>
+      <Footer />
+    </ion-toolbar>
   </ion-page>
 </template>
 
 <script>
+import { useRouter } from "vue-router";
 import {
   IonPage,
   IonContent,
+  IonCardContent,
   IonCard,
-  IonToolbar,
+  IonCol,
+  IonRow,
   IonHeader,
+  IonButtons,
+  IonCardHeader,
+  IonBackButton,
+  IonCardSubtitle,
+  IonToolbar,
+  IonGrid,
+  IonCardTitle,
+  IonText,
+  IonList,
+  IonSelect,
+  IonSelectOption,
+  IonItem,
+  IonButton,
 } from "@ionic/vue";
+import Footer from "@/views/components/footer.vue";
+
 export default {
   components: {
     IonPage,
+    IonButtons,
     IonContent,
+    IonCardContent,
     IonCard,
-    IonToolbar,
+    IonBackButton,
+    IonCol,
+    IonCardHeader,
+    IonRow,
     IonHeader,
+    IonCardSubtitle,
+    IonToolbar,
+    Footer,
+    IonGrid,
+    IonCardTitle,
+    IonText,
+    IonList,
+    IonSelect,
+    IonSelectOption,
+    IonItem,
+    IonButton,
+  },
+    setup() {
+    const router = useRouter();
+    return {
+      router,
+    };
   },
 };
 </script>
@@ -182,5 +232,14 @@ ion-input {
   /* height: 10%; */
   max-width: 100vw;
   max-height: 10vh;
+}
+.title {
+  padding-left: 5%;
+}
+.toolbar{
+  background-color: rgb(159, 143, 252);
+}
+.btn{
+  background-color: rgb(159, 143, 252);
 }
 </style>

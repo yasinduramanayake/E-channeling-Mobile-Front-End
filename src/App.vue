@@ -88,19 +88,19 @@ export default defineComponent({
     const appPages = [
       {
         title: "Login",
-
+        url:'/login',
         iosIcon: logInOutline,
         mdIcon: logInSharp,
       },
       {
         title: "Private Hospitals",
-
+        url:'/channel1',
         iosIcon: medkitOutline,
         mdIcon: medkitSharp,
       },
       {
         title: "Ayurvedic Hospitals",
-
+        url:'/channel2',
         iosIcon: medkitOutline,
         mdIcon: medkitSharp,
       },
