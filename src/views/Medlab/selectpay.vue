@@ -51,6 +51,9 @@
       </ion-row>
      </ion-card>
     </ion-content>
+    <ion-toolbar>
+      <Footer />
+    </ion-toolbar>
   </ion-page>
 </template>
 <script>
@@ -65,6 +68,7 @@ import {
   IonBackButton,
 } from "@ionic/vue";
 import Logo from "@/views/components/logo_sm.vue";
+import Footer from "@/views/components/footer.vue";
 export default {
   components: {
     IonPage,
@@ -76,6 +80,7 @@ export default {
     IonToolbar,
     IonBackButton,
     Logo,
+    Footer,
   },
 
   methods: {
