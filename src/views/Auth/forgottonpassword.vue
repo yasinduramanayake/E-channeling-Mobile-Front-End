@@ -21,37 +21,18 @@
       </ion-item>
       <br />
       <br />
-
-      <ion-item>
-        <ion-label position="stacked">Password</ion-label>
-        <ion-input placeholder="Password"></ion-input>
-      </ion-item>
       <br />
 
       <br />
 
       <div style="margin-left:5%;, margin-right:5%;">
-        <ion-button color="tertiary" @click="NextRoute1('/menu')" expand="block"
-          >SIGN IN
+        <ion-button
+          color="tertiary"
+          @click="() => router.push('/login')"
+          expand="block"
+          >Send Link
         </ion-button>
       </div>
-      <br />
-      <div class="txt_forgot_password">
-        <ion-text @click="() => router.push('/forget')"  color="tertiary"
-          >Forgotten Password?</ion-text
-        >
-      </div>
-      <ion-row> </ion-row>
-      <br />
-      <br />
-      <br />
-
-      <ion-text
-        class="signup"
-        @click="() => router.push('/register')"
-        color="tertiary"
-        >Don't Have an Account ? SIGN UP</ion-text
-      >
     </ion-content>
   </ion-page>
 </template>
@@ -68,7 +49,6 @@ import {
   IonLabel,
   IonItem,
   IonButton,
-  IonText,
   IonRow,
 } from "@ionic/vue";
 import login from "@/router/modules/login";
@@ -88,18 +68,11 @@ export default {
     IonInput,
     IonLabel,
     IonItem,
-    IonText,
+
     Logo,
     IonRow,
   },
-  methods: {
-    NextRoute1() {
-      this.$router.push("/menu");
-    },
-    NextRoute2() {
-      this.$router.push("");
-    },
-  },
+
   setup() {
     const router = useRouter();
     return {
