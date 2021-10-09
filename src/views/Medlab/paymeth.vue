@@ -9,12 +9,10 @@
       </ion-toolbar>
     </ion-header>
     <ion-content class="background-image" no-scroll padding>
-      <br />
-      <br />
-      <ion-card>
+      <ion-card style="height:230px">
         <ion-card-content>
           <center>
-            <img src="assets/visa4.png" />
+            <img style="width:140px; height:140px;" src="assets/visa4.png" />
           </center>
           <center>
             <ion-button
@@ -26,14 +24,13 @@
           </center>
         </ion-card-content>
       </ion-card>
-      <br />
 
-      <ion-card>
+      <ion-card style="height:230px">
         <ion-card-content>
+        <br/>
           <center>
-            <img src="assets/master4.png" />
+            <img style="width:140px; height:100px;" src="assets/master4.png" />
           </center>
-          <br />
           <br />
           <center>
             <ion-button
@@ -47,10 +44,7 @@
       </ion-card>
 
       <ion-card>
-        <ion-card-subtitle>SAVED CARD </ion-card-subtitle>
-        <ion-card-content>
-          <br />
-          <br />
+   <ion-card-content>
           <center>
             <ion-button
               color="tertiary"
@@ -91,7 +85,6 @@ import {
   IonBackButton,
   IonCard,
   IonCardContent,
-  IonCardSubtitle,
 } from "@ionic/vue";
 
 export default {
@@ -108,7 +101,7 @@ export default {
     IonBackButton,
     IonCard,
     IonCardContent,
-    IonCardSubtitle,
+   
   },
   methods: {
     NextRoute1() {
