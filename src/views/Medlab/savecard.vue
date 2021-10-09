@@ -9,14 +9,14 @@
       </ion-toolbar>
     </ion-header>
     <ion-item>
-      <h2 style="padding-left:60px">Master Card Details</h2>
+      <h2 style="padding-left:60px">Saved Card Details</h2>
     </ion-item>
     <ion-content class="background-image" no-scroll padding>
-      <center>
-        <div>
-          <img src="assets/visa4.png" />
-        </div>
-      </center>
+     <ion-card style="height:220px"> 
+       <div>
+          <img style="width:100px; height:80px;" src="assets/visa4.png" />
+      <p style="font-size:15px">1234 5678 9112 3469<br/>08/22</p>
+       </div>
       <ion-row>
         <ion-col>
           <ion-button
@@ -29,12 +29,14 @@
           <br /><br /><br />
         </ion-col>
       </ion-row>
-      <center>
+     </ion-card>
+     <ion-card style="height:220px">
+     <br/>
         <div>
-          <img src="assets/master4.png" />
+          <img style="width:90px; height:60px" src="assets/master4.png" />
+          <br/><br/>
+          <p>9854 2659 1452 3625<br/>10/25</p>
         </div>
-      </center>
-      <br />
       <ion-row>
         <ion-col>
           <ion-button
@@ -46,28 +48,36 @@
           </ion-button>
         </ion-col>
       </ion-row>
+     </ion-card>
     </ion-content>
+    <ion-toolbar>
+      <Footer />
+    </ion-toolbar>
   </ion-page>
 </template>
 <script>
 import {
   IonPage,
   IonContent,
+  IonCard,
   IonButton,
   IonHeader,
   IonTitle,
   IonToolbar,
   IonBackButton,
 } from "@ionic/vue";
+import Footer from "@/views/components/footer.vue";
 export default {
   components: {
     IonPage,
     IonTitle,
     IonContent,
+    IonCard,
     IonButton,
     IonHeader,
     IonToolbar,
     IonBackButton,
+    Footer,
   },
 
   methods: {
@@ -78,5 +88,5 @@ export default {
 };
 </script>
 <style scoped>
-@import "../theme/custom.css";
+
 </style>

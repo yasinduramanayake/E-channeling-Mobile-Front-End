@@ -191,7 +191,6 @@ export default {
 };
 </script>
 <style scoped>
-@import "../theme/custom.css";
 
 .img {
   height: 150px;

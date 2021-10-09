@@ -56,7 +56,6 @@ export default {
     IonButton,
     IonCol,
   },
-
   setup() {
     const router = useRouter();
     return {
@@ -68,6 +67,3 @@ export default {
 <style scoped>
 @import "../theme/custom.css";
 </style>
-
-
-

@@ -5,28 +5,25 @@
         <ion-buttons slot="start">
           <ion-back-button text="" default-href="/"></ion-back-button>
         </ion-buttons>
-        <ion-title style="padding-left:70px">E-channeling</ion-title>
+        <ion-title style="text-align:70px">E-channeling</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="background-image">
-      <Logo />
+    <br/>
+      <ion-item>
+      <h2 style="padding-left:60px">Delivery Details</h2>
+    </ion-item>
 
       <div style="padding-top:20px">
         <ion-item>
-          <ion-label position="stacked">Patient Name</ion-label>
-          <ion-input placeholder="Patient Name"></ion-input>
+          <ion-label position="stacked">Receiver's Name</ion-label>
+          <ion-input placeholder="Receiver's Name"></ion-input>
         </ion-item>
         <br />
 
         <ion-item>
-          <ion-label position="stacked">Your Area</ion-label>
-          <ion-input placeholder="Your Area"></ion-input>
-        </ion-item>
-        <br />
-
-        <ion-item>
-          <ion-label position="stacked">Pharmacy Name</ion-label>
-          <ion-input placeholder="Pharmacy Name"></ion-input>
+          <ion-label position="stacked">Address</ion-label>
+          <ion-input placeholder="Address"></ion-input>
         </ion-item>
         <br />
 
@@ -34,19 +31,13 @@
           <ion-label position="stacked">Mobile</ion-label>
           <ion-input placeholder="mobile"></ion-input>
         </ion-item>
-        <br />
-        <ion-item>
-          <ion-label position="stacked">Prescription Details</ion-label>
-          <ion-input placeholder="details"></ion-input>
-        </ion-item>
-        <br />
-
+<br/><br/>
         <ion-button
           style="padding-left:60px; padding-right:60px;"
           color="primary"
-          @click="NextRoute('/meddash')"
+          @click="NextRoute('/select')"
           expand="block"
-          >Add
+          >Select Card
         </ion-button>
       </div>
     </ion-content>
@@ -70,7 +61,7 @@ import {
   IonButton,
 } from "@ionic/vue";
 import Footer from "@/views/components/footer.vue";
-import Logo from "@/views/components/logo_sm.vue";
+
 export default {
   components: {
     IonPage,
@@ -85,16 +76,15 @@ export default {
     IonLabel,
     IonItem,
     Footer,
-    Logo,
   },
   methods: {
     NextRoute() {
-      this.$router.push("/meddash");
+      this.$router.push("/select");
     },
   },
 };
 </script>
 
 <style scoped>
-@import "../theme/custom.css";
+
 </style>

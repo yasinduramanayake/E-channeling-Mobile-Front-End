@@ -13,12 +13,11 @@
       <Logo />
 
       <br />
-      <br />
-      <br />
+     
       <div class="lbl1">
       <ion-label>Drug List</ion-label>
       </div>
-      <br /><br />
+      <br />
       <ion-list>
         <ion-item> Acetaminophen 10mg</ion-item>
         <ion-item>Adderall 5mg</ion-item>
@@ -36,9 +35,8 @@
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
+  
+     
 
       <ion-row>
         <ion-col>
@@ -50,7 +48,7 @@
               expand="block"
             >
               Proceed </ion-button
-            ><br /><br /><br />
+            ><br /><br />
           </center>
         </ion-col>
       </ion-row>
@@ -88,13 +86,12 @@ export default {
 
   methods: {
     NextRoute() {
-      this.$router.push("/success");
+      this.$router.push("/select");
     },
   },
 };
 </script>
 <style scoped>
-@import "../theme/custom.css";
 
 .label {
   font-size: 1.2rem;

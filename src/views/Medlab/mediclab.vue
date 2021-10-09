@@ -87,7 +87,6 @@ export default {
 };
 </script>
 <style scoped>
-@import "../theme/custom.css";
 
 .txt1 {
   font-family: Georgia, "Times New Roman", Times, serif;
