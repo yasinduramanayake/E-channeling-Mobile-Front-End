@@ -6,7 +6,7 @@
           <ion-buttons slot="start">
             <ion-back-button text="" default-href="/"></ion-back-button>
           </ion-buttons>
-          <ion-title>Drug delivery</ion-title>
+          <ion-title>Drug Delivery</ion-title>
         </ion-toolbar>
       </ion-header>
       <br /><br />
