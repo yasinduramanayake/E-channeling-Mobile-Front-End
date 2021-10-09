@@ -42,6 +42,16 @@ export default [
       path: "/savecard",
       component: () => import("@/views/Medlab/savecard.vue"),
     },
+
+    {
+      path: "/select",
+      component: () => import("@/views/Medlab/selectpay.vue"),
+    },
+
+    {
+      path: "/delivery",
+      component: () => import("@/views/Medlab/delivery.vue"),
+    },
   
     {
       path: "/success",

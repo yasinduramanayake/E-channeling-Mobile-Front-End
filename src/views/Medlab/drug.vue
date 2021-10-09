@@ -88,7 +88,7 @@ export default {
 
   methods: {
     NextRoute() {
-      this.$router.push("/success");
+      this.$router.push("/select");
     },
   },
 };

@@ -7,7 +7,7 @@
       <br />
       <center>
         <div>
-          <img src="assets/medlab.jpg" />
+          <img src="assets/success.png" />
         </div>
       </center>
       <br />
