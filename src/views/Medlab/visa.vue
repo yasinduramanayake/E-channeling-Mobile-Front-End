@@ -10,7 +10,7 @@
     </ion-header>
     <ion-content class="background-image" no-scroll padding>
       <ion-item>
-        <h1 style="padding-left:60px">Visa Card Details</h1>
+        <h1 style="padding-left:80px">Visa Card Details</h1>
       </ion-item>
       <center>
         <img src="assets/visa4.png" />

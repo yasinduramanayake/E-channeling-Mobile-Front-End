@@ -9,7 +9,7 @@
       </ion-toolbar>
     </ion-header>
     <ion-item>
-      <h2 style="padding-left:60px">Saved Card Details</h2>
+      <h2 style="padding-left:80px">Saved Card Details</h2>
     </ion-item>
     <ion-content class="background-image" no-scroll padding>
      <ion-card style="height:220px"> 

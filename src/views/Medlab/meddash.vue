@@ -3,7 +3,7 @@
     <ion-header :translucent="true">
       <ion-toolbar color="tertiary">
         <ion-buttons slot="start">
-          <ion-back-button text="" default-href="/"></ion-back-button>
+          <ion-back-button text="" default-href="/medlab"></ion-back-button>
         </ion-buttons>
         <ion-title style="padding-left:70px">Medical Lab</ion-title>
       </ion-toolbar>
@@ -191,7 +191,6 @@ export default {
 };
 </script>
 <style scoped>
-
 .img {
   height: 150px;
   width: 150px;
