@@ -25,7 +25,7 @@
                   </div>
                 </center>
                 <ion-button
-                  class="btn"
+              
                   color="tertiary"
                   @click="NextRoute1('/prescription')"
                   expand="block"
@@ -51,7 +51,7 @@
                   </div>
                 </center>
                 <ion-button
-                  class="btn"
+                 
                   color="primary"
                   @click="NextRoute2('/labtest')"
                   expand="block"
@@ -77,7 +77,7 @@
                   </div>
                 </center>
                 <ion-button
-                  class="btn"
+                
                   color="primary"
                   @click="NextRoute3('/drug')"
                   expand="block"
@@ -103,7 +103,7 @@
                   </div>
                 </center>
                 <ion-button
-                  class="btn"
+                  
                   color="primary"
                   @click="NextRoute4('/paymeth')"
                   expand="block"

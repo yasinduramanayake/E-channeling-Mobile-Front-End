@@ -35,7 +35,6 @@
       <br />
 
       <ion-button
-        class="btn"
         color="tertiary"
         @click="NextRoute1('/menu')"
         expand="block"
