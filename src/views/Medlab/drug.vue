@@ -68,7 +68,6 @@ import {
   IonItem,
   IonLabel,
 } from "@ionic/vue";
-import { useRouter } from "vue-router";
 import Logo from "@/views/components/logo_sm.vue";
 import Footer from "@/views/components/footer.vue";
 export default {

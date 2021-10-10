@@ -29,7 +29,7 @@
                   color="tertiary"
                   @click="NextRoute1('/prescription')"
                   expand="block"
-                  >Add Prescription Details
+                  >Add Details
                 </ion-button>
               </ion-col>
             </ion-row>
